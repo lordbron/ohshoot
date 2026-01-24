@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/4e1c72e2-c695-44fc-9103-e72cd073b4e6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0a5a7cda-2230-403b-98cd-da25cda323e6
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0a5a7cda-2230-403b-98cd-da25cda323e6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 25ed8fce-5c39-415c-8f3c-36c9b755dd11
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/25ed8fce-5c39-415c-8f3c-36c9b755dd11>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 61ec93cb-3b8d-4314-8487-3bff6220f71d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    rightHand: false
+    visualSceneObject: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - visualSceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightHand: !<reference.HandTracking3DAsset> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject visualSceneObject
+    - // @input Asset.HandTracking3DAsset rightHand
