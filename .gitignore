@@ -15,7 +15,8 @@ Workspaces/**
 .DS_Store
 .
 *.lock
-*.supabaseProject
-*.supabaseProject.meta
 
 # Shipped by Lens Studio
+
+*.supabaseProject
+*.supabaseProject.meta
