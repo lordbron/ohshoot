@@ -1,3 +1,4 @@
+// A class to handle all things related to hands in the lens
 @component
 export class HandStuff extends BaseScriptComponent {
   @input()
