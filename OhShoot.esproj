@@ -13,16 +13,16 @@ metaInfo:
     []
   tags:
     []
-  lensName: Snap Cloud
+  lensName: Oh Shoot
   lensDescriptors:
-    []
+    - GEN_AI_ICON
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
     - Spectacles
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: 172d6d781ac49def0d007f5a3737fc6c
   videoPreviewHash: ""
   fromTemplateName: Snap Cloud
   fromTemplateUrl: Lens Studio 5.15.1.25102815
