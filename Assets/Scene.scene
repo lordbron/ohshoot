@@ -3530,12 +3530,12 @@
     - d3f0c7b9-16e7-464c-bd24-175bf0450745: 08d4d986-511b-4cf8-5b64-096108799c30
     - eda3767e-f1bc-491b-8510-ed4a8f315ca1: 37ed8b22-26c4-4c1b-54c0-2749c1980080
   Name: 0697014b-e3c9-7e87-8000-5f14eac0a1ba-model
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    Scale: {x: 20.000000, y: 20.000000, z: 20.000000}
     HasSegmentScaleCompensation: false
   Children:
     - !<own> eda3767e-f1bc-491b-8510-ed4a8f315ca1
@@ -4589,7 +4589,7 @@
   PrefabRemaps:
     []
   Name: WorldQueryHit
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
