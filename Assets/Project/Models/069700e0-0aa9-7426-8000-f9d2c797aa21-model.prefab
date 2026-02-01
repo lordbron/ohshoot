@@ -4,6 +4,21 @@
     - !<own> 84104a94-da9c-4705-ac63-45ab3404bb29
   LazyLoading: false
   RetainAssets: true
+- !<SceneObject/304f8634-0f60-4f80-8674-543479a933a5>
+  PrefabRemaps:
+    []
+  Name: Muzzle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.296950, y: 0.025842, z: -0.263772}
+    Rotation: {x: 175.000000, y: -70.000015, z: 180.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
 - !<RenderMeshVisual/7c8a6620-d7d3-4152-96ff-7434228a4ca8>
   PrefabRemaps:
     []
@@ -26,6 +41,7 @@
     {}
 - !<SceneObject/84104a94-da9c-4705-ac63-45ab3404bb29>
   PrefabRemaps:
+    - 304f8634-0f60-4f80-8674-543479a933a5: 8b0d41ff-5a03-45ab-bc78-688e44da2d18
     - 7c8a6620-d7d3-4152-96ff-7434228a4ca8: 7c8a6620-d7d3-4152-6900-8bcbdd75b357
     - 84104a94-da9c-4705-ac63-45ab3404bb29: 84104a94-da9c-4705-539c-ba54cbfb44d6
     - 87f0c96e-186d-4ff5-bac5-84b526742fe6: 87f0c96e-186d-4ff5-453a-7b4ad98bd019
@@ -65,12 +81,12 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 90.000023, y: -0.000000, z: 0.000000}
+    Position: {x: -0.200000, y: 0.080000, z: 0.050000}
+    Rotation: {x: 90.000023, y: -0.000000, z: 20.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 304f8634-0f60-4f80-8674-543479a933a5
   Components:
     - !<own> 7c8a6620-d7d3-4152-96ff-7434228a4ca8
 - !<SceneObject/ce3d6e24-e5a3-44e0-8528-b8cf42891eb4>
