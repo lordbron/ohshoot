@@ -26,7 +26,9 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    projectile: false
+    scoreText: false
+    shootingRayStart: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +38,13 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      shootingRayStart: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scoreText: !<reference.Component> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - // @input Asset.ObjectPrefab projectile
+    - '// @input SceneObject shootingRayStart {"hint":"Start point for the shooting line"}'
+    - '// @input Component.Component scoreText {"hint":"Text component to display score"}'

@@ -28,6 +28,7 @@
   ScriptInputsHidden:
     filterEnabled: false
     targetObject: false
+    weaponObject: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -38,10 +39,12 @@
     []
   DefaultScriptInputs:
     - targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      weaponObject: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
       filterEnabled: false
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input SceneObject targetObject
+    - // @input AssignableType weaponObject
     - // @input bool filterEnabled

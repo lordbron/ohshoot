@@ -86,12 +86,16 @@
   Enabled: true
   ScriptAsset: !<reference> ffbe76d4-5fa1-497f-859b-7dba085ded91
   ScriptInputsDefault:
-    {}
+    projectile: true
+    shootingRayStart: true
+    scoreText: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      {}
+      projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      shootingRayStart: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scoreText: !<reference.Component> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

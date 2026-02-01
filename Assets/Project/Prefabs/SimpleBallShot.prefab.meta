@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/ae742a58-3fa7-1caa-f1cb-aca811521220>
+- !<AssetImportMetadata/4ffc8df8-1d93-4486-a424-72172e8cdd1d>
   ImportedAssetIds:
-    ObjectPrefab: !<reference> d20e8713-f3a9-4017-8108-e186de6e43a1
+    ObjectPrefab: !<reference> 7755a93b-232e-4762-b995-4737ca785952
   ImporterName: ObjectPrefabImporter
-  PrimaryAsset: !<reference> d20e8713-f3a9-4017-8108-e186de6e43a1
+  PrimaryAsset: !<reference> 7755a93b-232e-4762-b995-4737ca785952
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    ObjectPrefab: !<own> f56b6ee1-84de-427e-86f8-060aa9b10082
+    ObjectPrefab: !<own> 7d086453-7562-4485-aba8-223e5417289e
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<BodyComponent/511c5040-d880-4e66-47e4-73c31bca0aa5>
+- !<BodyComponent/418c1ea6-0959-4d9c-7d13-14b8ba3235a1>
   PrefabRemaps:
     []
   Name: Physics Body
@@ -37,24 +37,7 @@
   BodySettingValue: 0.020000
   Damping: 0.500000
   AngularDamping: 0.500000
-- !<SceneObject/57681c2b-66a7-4828-7aea-cfc6a7e7a5f4>
-  PrefabRemaps:
-    []
-  Name: Sphere
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> d030f2df-6be1-4cb7-672a-26a5ad757458
-    - !<own> 511c5040-d880-4e66-47e4-73c31bca0aa5
-    - !<own> 7638e1f7-f76f-4f7c-5c4c-e3313dab017e
-- !<ColliderComponent/7638e1f7-f76f-4f7c-5c4c-e3313dab017e>
+- !<ColliderComponent/60055aac-8a44-40e0-5f42-83fb45a5f3d6>
   PrefabRemaps:
     []
   Name: Physics Collider
@@ -72,7 +55,12 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
-- !<RenderMeshVisual/d030f2df-6be1-4cb7-672a-26a5ad757458>
+- !<ObjectPrefabAssetData/7d086453-7562-4485-aba8-223e5417289e>
+  Prototype: !<ObjectOwner/0eccdaf5-9c09-4876-9ba1-0e5e2a293773>
+    PackagePath: ""
+    objects:
+      - !<own> ee471891-aa6d-40c2-54de-e57d30074cde
+- !<RenderMeshVisual/87600dd3-cc61-47e2-711f-38fee667aa78>
   PrefabRemaps:
     []
   Name: Render Mesh Visual
@@ -85,15 +73,27 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 7c02fcec-c3c7-485e-ab7b-ab75f51d3b8e
-  Mesh: !<reference> f3cc8afc-cb20-4193-bb1a-39f896f0cd9a
+    - !<reference> c71dde88-df6c-46a6-8426-d07b956a747e
+  Mesh: !<reference> 2e5e428e-9a20-4c3f-ad4a-4451f07df611
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
   BlendShapes:
     {}
-- !<ObjectPrefabAssetData/f56b6ee1-84de-427e-86f8-060aa9b10082>
-  Prototype: !<ObjectOwner/354722d9-dd8d-408a-9a11-241b3c67246d>
-    PackagePath: ""
-    objects:
-      - !<own> 57681c2b-66a7-4828-7aea-cfc6a7e7a5f4
+- !<SceneObject/ee471891-aa6d-40c2-54de-e57d30074cde>
+  PrefabRemaps:
+    []
+  Name: Sphere
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 22.376240, y: 0.000000, z: -43.649414}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 87600dd3-cc61-47e2-711f-38fee667aa78
+    - !<own> 418c1ea6-0959-4d9c-7d13-14b8ba3235a1
+    - !<own> 60055aac-8a44-40e0-5f42-83fb45a5f3d6
