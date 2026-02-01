@@ -816,6 +816,7 @@
     - 0d0045d3-6b3d-4e7d-9aa9-acec9d4ada83: 7c8a6620-d7d3-4152-6900-8bcbdd75b357
     - 38d42809-5d30-4140-bbd1-e9e47540a8a8: 84104a94-da9c-4705-539c-ba54cbfb44d6
     - 4c43328f-39f2-497f-83e1-191bdbdacc37: c0a8230d-d866-4b2e-7984-1b313cce124b
+    - 4d9aecbf-d181-4651-a755-76d793595308: 8b0d41ff-5a03-45ab-bc78-688e44da2d18
     - cf8d6d06-75ab-4f6e-a52d-e69f3ca5d71d: ce3d6e24-e5a3-44e0-7ad7-4730bd76e14b
     - fc1462c7-6983-454f-8663-e12e5d20ef5b: 87f0c96e-186d-4ff5-453a-7b4ad98bd019
   Name: 069700e0-0aa9-7426-8000-f9d2c797aa21-model
@@ -1457,7 +1458,7 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 4d9aecbf-d181-4651-a755-76d793595308
   Components:
     - !<own> 0d0045d3-6b3d-4e7d-9aa9-acec9d4ada83
 - !<SceneObject/4cb8765a-ccaf-4eac-9e5e-fbdfb30ad4e8>
@@ -1508,6 +1509,21 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 25a5160c-dd09-4e72-9e5d-156e2f82f869
+  Components:
+    []
+- !<SceneObject/4d9aecbf-d181-4651-a755-76d793595308>
+  PrefabRemaps:
+    []
+  Name: Muzzle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.296950, y: 0.025842, z: -0.263772}
+    Rotation: {x: 175.000000, y: -70.000015, z: 180.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
   Components:
     []
 - !<Text/4dca2c72-5e22-47f7-8a45-d82f6586a2f6>
@@ -1640,7 +1656,7 @@
   ScriptInputs:
     "":
       projectile: !<reference.ObjectPrefab> 7755a93b-232e-4762-b995-4737ca785952
-      shootingRayStart: !<reference.SceneObject> 8da1efe3-9803-452d-a2da-84bbde0cfa40
+      muzzle: !<reference.SceneObject> 4d9aecbf-d181-4651-a755-76d793595308
       scoreText: !<reference.Component> 9d3a9ab1-b9fd-49b0-b345-3d40638c3e40
   ScriptTypes:
     "":
@@ -2931,6 +2947,7 @@
     - 0d0045d3-6b3d-4e7d-9aa9-acec9d4ada83: 8a1946d7-a6d6-464d-73b1-f264fd3320f4
     - 38d42809-5d30-4140-bbd1-e9e47540a8a8: e2d3cd7c-cba1-4cb3-4eb0-ce4dc2b99468
     - 4c43328f-39f2-497f-83e1-191bdbdacc37: 9fbd1bae-fa90-47b4-5a6c-e15b26e722cb
+    - 4d9aecbf-d181-4651-a755-76d793595308: abc19f0e-5743-44f8-8078-ee9dd57e8068
     - 50adab7c-8d59-4c9c-8516-acf744f4a951: ae832497-08e4-4e12-724a-291b6d084c11
     - 8da1efe3-9803-452d-a2da-84bbde0cfa40: 54f0cfc9-ecd9-4411-7fd8-4dce13160626
     - cf8d6d06-75ab-4f6e-a52d-e69f3ca5d71d: 9971a42b-46eb-4e8d-544f-7eba37d40fa2

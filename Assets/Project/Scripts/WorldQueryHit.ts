@@ -86,7 +86,7 @@ export class WorldQueryHit extends BaseScriptComponent {
         // Called when a trigger ends
         // Copy the plane/axis object
         const newTarget = this.sceneObject.copyWholeHierarchy(this.targetObject)
-        this.weaponObject.shootArrow(newTarget)
+        this.weaponObject.shootArrow()
       }
     }
   }

@@ -7,8 +7,7 @@ export class BaseWeapon extends BaseScriptComponent {
     projectile!: ObjectPrefab
 
     @input
-    @hint("Start point for the shooting line")
-    shootingRayStart!: SceneObject
+    muzzle!:SceneObject
 
     @input
     @hint("Text component to display score")
@@ -22,37 +21,22 @@ export class BaseWeapon extends BaseScriptComponent {
     private dragFactor: number = 0.001
 
     onAwake() {
-
     }
 
     // Fire the arrow projectile
-  shootArrow(endPointObject:SceneObject): void {
+  shootArrow(): void {
     this.shootCount++
     print("🏹 SHOOT ARROW CALLED! Shot #" + this.shootCount + " 🏹")
     print("SHOOTING ARROW - Shot #" + this.shootCount)
 
-    // Use shooting ray start and end for direction
-    if (!this.shootingRayStart || !endPointObject) {
-        print("Shooting ray points not set")
-        return
-    }
-
     // Calculate the direction from start to end
-    const startPos = this.shootingRayStart.getTransform().getWorldPosition()
-    const endPos = endPointObject.getTransform().getWorldPosition()
-
-    // Make sure we have a valid direction vector
-    if (startPos.distance(endPos) < 0.001) {
-        print("Start and end positions are too close")
-        return
-    }
+    const startPos = this.muzzle.getTransform().getWorldPosition()
 
     // Calculate normalized direction vector precisely
-    const shootDir = endPos.sub(startPos).normalize()
+    const shootDir = this.muzzle.getTransform().forward
 
     // Log shooting parameters for debugging
     print("🎯 Shooting from: " + startPos.toString())
-    print("🎯 Shooting to: " + endPos.toString())
     print("🎯 Direction vector: " + shootDir.toString())
 
     // Create the projectile

@@ -13,6 +13,7 @@
     - ae832497-08e4-4e12-8db5-d6e492f7b3ee: ae832497-08e4-4e12-724a-291b6d084c11
     - c132f850-ade3-4e05-82e4-4d67ae0436d2: c132f850-ade3-4e05-7d1b-b29851fbc92d
     - e2d3cd7c-cba1-4cb3-b14f-31b23d466b97: e2d3cd7c-cba1-4cb3-4eb0-ce4dc2b99468
+    - f13d3ced-b20e-443a-84c8-4af3564d3c64: abc19f0e-5743-44f8-8078-ee9dd57e8068
   Name: ColorToyWeaponPrefab
   Enabled: true
   Layers: 1
@@ -67,12 +68,12 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 90.000023, y: -0.000000, z: 0.000000}
+    Position: {x: -0.200000, y: 0.080000, z: 0.050000}
+    Rotation: {x: 90.000023, y: -0.000000, z: 20.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> f13d3ced-b20e-443a-84c8-4af3564d3c64
   Components:
     - !<own> 8a1946d7-a6d6-464d-8c4e-0d9b02ccdf0b
 - !<ScriptComponent/ae832497-08e4-4e12-8db5-d6e492f7b3ee>
@@ -83,14 +84,14 @@
   ScriptAsset: !<reference> ffbe76d4-5fa1-497f-859b-7dba085ded91
   ScriptInputsDefault:
     projectile: true
-    shootingRayStart: true
+    muzzle: true
     scoreText: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
-      shootingRayStart: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      muzzle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       scoreText: !<reference.Component> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
@@ -117,6 +118,7 @@
     - 9fbd1bae-fa90-47b4-a593-1ea4d918dd34: c0a8230d-d866-4b2e-7984-1b313cce124b
     - c132f850-ade3-4e05-82e4-4d67ae0436d2: 87f0c96e-186d-4ff5-453a-7b4ad98bd019
     - e2d3cd7c-cba1-4cb3-b14f-31b23d466b97: 84104a94-da9c-4705-539c-ba54cbfb44d6
+    - f13d3ced-b20e-443a-84c8-4af3564d3c64: 8b0d41ff-5a03-45ab-bc78-688e44da2d18
   Name: 069700e0-0aa9-7426-8000-f9d2c797aa21-model
   Enabled: true
   Layers: 1
@@ -127,5 +129,20 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> c132f850-ade3-4e05-82e4-4d67ae0436d2
+  Components:
+    []
+- !<SceneObject/f13d3ced-b20e-443a-84c8-4af3564d3c64>
+  PrefabRemaps:
+    []
+  Name: Muzzle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.296950, y: 0.025842, z: -0.263772}
+    Rotation: {x: 175.000000, y: -70.000015, z: 180.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
   Components:
     []
