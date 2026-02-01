@@ -4,37 +4,14 @@
     - !<own> ee471891-aa6d-40c2-ab21-1a82cff8b321
   LazyLoading: false
   RetainAssets: true
-- !<BodyComponent/418c1ea6-0959-4d9c-82ec-eb4745cdca5e>
-  PrefabRemaps:
-    []
-  Name: Physics Body
-  Enabled: true
-  Shape: !<Sphere>
-    FitVisual: true
-    Radius: 6.000000
-  Matter: !<reference> 00000000-0000-0000-0000-000000000000
-  Filter: !<reference> 00000000-0000-0000-0000-000000000000
-  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  EnableSmoothing: false
-  PositionTension: 30.000000
-  RotationTension: 30.000000
-  ForceCompound: false
-  Intangible: false
-  ShowCollider: false
-  Dynamic: true
-  BodySetting: Mass
-  BodySettingValue: 0.020000
-  Damping: 0.500000
-  AngularDamping: 0.500000
 - !<ColliderComponent/60055aac-8a44-40e0-a0bd-7c04ba5a0c29>
   PrefabRemaps:
     []
   Name: Physics Collider
   Enabled: true
-  Shape: !<Sphere>
+  Shape: !<Box>
     FitVisual: true
-    Radius: 6.000000
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
@@ -45,6 +22,22 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
+- !<ScriptComponent/61199e2d-124e-42dd-8d7c-ecf0c8f0caf3>
+  PrefabRemaps:
+    []
+  Name: BaseProjectile
+  Enabled: true
+  ScriptAsset: !<reference> f9388b73-63e1-4a13-9333-334f6637a8de
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/87600dd3-cc61-47e2-8ee0-c70119985587>
   PrefabRemaps:
     []
@@ -67,8 +60,8 @@
     {}
 - !<SceneObject/ee471891-aa6d-40c2-ab21-1a82cff8b321>
   PrefabRemaps:
-    - 418c1ea6-0959-4d9c-82ec-eb4745cdca5e: 418c1ea6-0959-4d9c-7d13-14b8ba3235a1
     - 60055aac-8a44-40e0-a0bd-7c04ba5a0c29: 60055aac-8a44-40e0-5f42-83fb45a5f3d6
+    - 61199e2d-124e-42dd-8d7c-ecf0c8f0caf3: 36bc96a3-68db-4174-b59e-6575ebf6410f
     - 87600dd3-cc61-47e2-8ee0-c70119985587: 87600dd3-cc61-47e2-711f-38fee667aa78
     - ee471891-aa6d-40c2-ab21-1a82cff8b321: ee471891-aa6d-40c2-54de-e57d30074cde
   Name: Sphere
@@ -83,5 +76,5 @@
     []
   Components:
     - !<own> 87600dd3-cc61-47e2-8ee0-c70119985587
-    - !<own> 418c1ea6-0959-4d9c-82ec-eb4745cdca5e
     - !<own> 60055aac-8a44-40e0-a0bd-7c04ba5a0c29
+    - !<own> 61199e2d-124e-42dd-8d7c-ecf0c8f0caf3

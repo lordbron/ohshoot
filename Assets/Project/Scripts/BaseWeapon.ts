@@ -98,8 +98,6 @@ export class BaseWeapon extends BaseScriptComponent {
             this.setupManualMotion(instance, shootDir)
         }
 
-        // Add collision detection for scoring
-        this.setupCollisionDetection(instance)
         } else {
         print("No physics body found on projectile - using manual motion")
 
@@ -171,34 +169,6 @@ export class BaseWeapon extends BaseScriptComponent {
         }
       })
 
-      // Add simple collision detection for scoring
-      this.setupSimpleCollisionDetection(projectile, moveScript)
-    }
-  }
-
-  // Setup collision detection for scoring
-  private setupCollisionDetection(projectile: SceneObject): void {
-    // Get the collider component on the projectile
-    const collider = projectile.getComponent("Physics.ColliderComponent") as any
-    if (collider) {
-      // Setup overlap events
-      collider.onOverlapEnter.add((e) => {
-        const hitObject = e.overlap.collider.getSceneObject()
-
-        // Check if it hit the rotating target or any other target
-        if ((this.rotatingTarget && hitObject === this.rotatingTarget) || hitObject.name.includes("Target")) {
-          this.score += 10 // Increase score
-          print("Target hit! Score: " + this.score)
-
-          // Update score text
-          if (this.scoreText) {
-            ;(this.scoreText as any).text = "Score: " + this.score
-          }
-
-          // Destroy the projectile after hitting
-          projectile.destroy()
-        }
-      })
     }
   }
 

@@ -195,6 +195,22 @@
     - !<own> 8b1597e7-0f83-4295-a17b-d12cd299f954
   Components:
     []
+- !<ScriptComponent/02f7dfe6-7c8c-449a-bd97-ae27c23a4836>
+  PrefabRemaps:
+    []
+  Name: BaseProjectile
+  Enabled: true
+  ScriptAsset: !<reference> f9388b73-63e1-4a13-9333-334f6637a8de
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/031abae4-7029-4da6-89ec-08d2369c519f>
   PrefabRemaps:
     []
@@ -1280,6 +1296,7 @@
     - 42da2e9b-7138-4b7a-a3b2-e91770ee293c: bb168ac7-be86-4be9-5506-7efdc588e635
     - 45bab727-eb5d-4071-9794-6037f509f4a3: e5308435-92ee-4984-66c0-29fcf7690592
     - 4be68bc8-bfc8-43cb-b386-eb5e4d606a81: 07733121-2336-4033-73ad-f16ba0bf9ec9
+    - 95c00f90-07d8-46dc-8b4c-147fb10daac3: 25e6e8f9-4c0b-447d-a24a-3f2a516eda0a
     - e14845f4-f741-499a-a26a-42362ffeb1a6: fbede149-7264-450c-739b-cd7f224b08f0
     - e9c00fb3-4944-4aff-849f-4f94ff3dd1b4: 0bd6b962-acfe-407a-537c-9ac068d638da
   Name: RubberDuckyTarget
@@ -1294,6 +1311,7 @@
     - !<own> 45bab727-eb5d-4071-9794-6037f509f4a3
   Components:
     - !<own> 130ee5db-2ef8-48d8-9230-174ad8bba614
+    - !<own> 95c00f90-07d8-46dc-8b4c-147fb10daac3
 - !<SceneObject/440d9903-0516-47eb-a79f-3764e57df5b3>
   PrefabRemaps:
     []
@@ -2046,8 +2064,8 @@
     []
 - !<SceneObject/5d0f0ffb-e0ca-4dd5-8946-5e7c05b38c3a>
   PrefabRemaps:
+    - 02f7dfe6-7c8c-449a-bd97-ae27c23a4836: 36bc96a3-68db-4174-b59e-6575ebf6410f
     - 5d0f0ffb-e0ca-4dd5-8946-5e7c05b38c3a: ee471891-aa6d-40c2-54de-e57d30074cde
-    - 607e839b-f396-41e8-bf7a-41adf47fb2fa: 418c1ea6-0959-4d9c-7d13-14b8ba3235a1
     - 84947a21-c016-4e26-aeb9-5b1148c74b02: 87600dd3-cc61-47e2-711f-38fee667aa78
     - aeb21dd7-15ff-4c87-a0a9-e5e59a08469d: 60055aac-8a44-40e0-5f42-83fb45a5f3d6
   Name: Sphere
@@ -2062,8 +2080,8 @@
     []
   Components:
     - !<own> 84947a21-c016-4e26-aeb9-5b1148c74b02
-    - !<own> 607e839b-f396-41e8-bf7a-41adf47fb2fa
     - !<own> aeb21dd7-15ff-4c87-a0a9-e5e59a08469d
+    - !<own> 02f7dfe6-7c8c-449a-bd97-ae27c23a4836
 - !<SceneObject/5d0fd01d-a7f6-432e-b50e-d0c6a689b942>
   PrefabRemaps:
     []
@@ -2095,29 +2113,6 @@
     []
   Components:
     - !<own> 8d686cac-3e9e-493d-a387-4d12062c08f7
-- !<BodyComponent/607e839b-f396-41e8-bf7a-41adf47fb2fa>
-  PrefabRemaps:
-    []
-  Name: Physics Body
-  Enabled: true
-  Shape: !<Sphere>
-    FitVisual: true
-    Radius: 6.000000
-  Matter: !<reference> 00000000-0000-0000-0000-000000000000
-  Filter: !<reference> 00000000-0000-0000-0000-000000000000
-  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  EnableSmoothing: false
-  PositionTension: 30.000000
-  RotationTension: 30.000000
-  ForceCompound: false
-  Intangible: false
-  ShowCollider: false
-  Dynamic: true
-  BodySetting: Mass
-  BodySettingValue: 0.020000
-  Damping: 0.500000
-  AngularDamping: 0.500000
 - !<RenderMeshVisual/60bdc8a7-3a1c-4d7f-bde7-0d266fd28552>
   PrefabRemaps:
     []
@@ -3012,6 +3007,29 @@
   ScriptTypes:
     "":
       {}
+- !<BodyComponent/95c00f90-07d8-46dc-8b4c-147fb10daac3>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<SceneObject/974e2072-cd2a-4664-8d91-d71bbcd60d54>
   PrefabRemaps:
     []
@@ -3496,9 +3514,9 @@
     []
   Name: Physics Collider
   Enabled: true
-  Shape: !<Sphere>
+  Shape: !<Box>
     FitVisual: true
-    Radius: 6.000000
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000

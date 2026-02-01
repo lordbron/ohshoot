@@ -64,6 +64,29 @@
     - !<own> 07733121-2336-4033-73ad-f16ba0bf9ec9
   Components:
     []
+- !<BodyComponent/25e6e8f9-4c0b-447d-a24a-3f2a516eda0a>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<ObjectPrefabAssetData/4c3f0863-cdae-49b7-bedd-f2b7afd4a96c>
   Prototype: !<ObjectOwner/2328af31-70b9-4a5b-a0c2-4ad9a9ed5707>
     PackagePath: ""
@@ -100,6 +123,7 @@
     - !<own> e5308435-92ee-4984-66c0-29fcf7690592
   Components:
     - !<own> aafb26f9-f17c-4d92-7feb-4cd45513a90e
+    - !<own> 25e6e8f9-4c0b-447d-a24a-3f2a516eda0a
 - !<SceneObject/e5308435-92ee-4984-66c0-29fcf7690592>
   PrefabRemaps:
     - 00ee6d73-cc38-47f8-77c3-4e8a40b7ff6d: 742d370f-7570-4fb6-6830-71177adf4d3d
