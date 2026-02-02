@@ -1,0 +1,39 @@
+- !<NativePackageDescriptor/e0382da8-c897-4014-a029-e0e11344e3ef>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 15
+    patch: 1
+    build: 25102815
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: |-
+    The World Mesh - Spawn On Surfaces Package allows you to instantiate and occlude virtual objects based on real world surfaces through real-time 3D mesh reconstruction of what your device sees.
+    Note: Please add Device Tracking with World mode to main Camera. And attach the component to Tracker in the World Controller Script. Use interactive preview or push to device.
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 76
+  ExportUid: a91acaea-43a4-4185-a2b1-0e69c6de8553
+  ComponentUid: 6f62b8b2-6c6c-47db-beb5-fa9939689fc5
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

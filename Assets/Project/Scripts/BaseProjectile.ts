@@ -14,7 +14,7 @@ export class BaseProjectile extends BaseScriptComponent {
       const self = this
       collider.onOverlapEnter.add((e) => {
         const hitObject = e.overlap.collider.getSceneObject()
-          print("Overlapping")
+          print("Overlapping " + hitObject.name)
 
         // Check if it hit the rotating target or any other target
         if (hitObject.name.includes("Target")) {
@@ -33,7 +33,10 @@ export class BaseProjectile extends BaseScriptComponent {
 
         //   this.sceneObject.destroy()
         print("Hit a target!")
+        } else if (hitObject.name.includes("World")) {
+          print("Splat")
         } else {
+          // self.sceneObject.destroy()
           print("Not a target!")
         }
       })
