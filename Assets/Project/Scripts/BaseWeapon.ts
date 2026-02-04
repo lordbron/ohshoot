@@ -53,6 +53,7 @@ export class BaseWeapon extends BaseScriptComponent {
         // Enable the instance and position it exactly at the start point
         instance.enabled = true
         instance.getTransform().setWorldPosition(startPos)
+        instance.removeParent()
 
         // Create a rotation that directly aligns the projectile with the shooting direction
         // The Z-axis of the object should point toward the shooting direction

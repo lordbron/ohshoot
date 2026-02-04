@@ -6,6 +6,8 @@ export class BaseProjectile extends BaseScriptComponent {
     public startPosition: vec3 = vec3.zero()
     public direction: vec3 = vec3.zero()
     public flightTime: number = 0
+    private shouldMove: boolean = true
+    private lastPos: vec3 = vec3.zero()
 
     onAwake() {
         this.setupCollisionDetection()
@@ -13,6 +15,7 @@ export class BaseProjectile extends BaseScriptComponent {
     }
     
     onUpdate() {
+      if (this.shouldMove) {
         // Get time since last frame
         const dt = getDeltaTime()
         this.flightTime += dt
@@ -51,6 +54,8 @@ export class BaseProjectile extends BaseScriptComponent {
           this.getTransform().setWorldRotation(lookRotation)
         }
       }
+    }
+
   public setupManualMotion(direction: vec3): void {    
 
       // For debugging
@@ -156,6 +161,7 @@ export class BaseProjectile extends BaseScriptComponent {
         print("Hit a target!")
         } else if (hitObject.name.includes("World")) {
           print("Splat")
+          self.shouldMove = false
         } else {
           // self.sceneObject.destroy()
           print("Not a target!")
