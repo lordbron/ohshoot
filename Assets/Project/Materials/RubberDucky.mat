@@ -1,9 +1,12 @@
-- !<Material/cfdfbbec-d202-42fb-b388-a00b36cc14bf>
+- !<Material/b12bf6b3-3ad7-4b16-9521-6ee013243976>
   PackagePath: ""
   PassesInfo:
-    - !<own> 8c805a11-21b1-4f13-b14a-9a34be8a53f3
-- !<PassInfo/8c805a11-21b1-4f13-b14a-9a34be8a53f3>
+    - !<own> 890c59ac-ef7a-4794-8f47-e11d5fde45e4
+- !<PassInfo/890c59ac-ef7a-4794-8f47-e11d5fde45e4>
   CachedProperties:
+    - Port_Default_N176:
+        typeIdx: 5
+        value: {x: 1.000000, y: 0.999969, z: 0.999985, w: 1.000000}
     - Port_Depth_N004:
         typeIdx: 1
         value: 1.000000
@@ -148,24 +151,6 @@
     - Port_Value4_N162:
         typeIdx: 1
         value: 0.000000
-    - Tweak_N167:
-        typeIdx: 9
-        value:
-          id: 00000000-0000-0000-0000-000000000000
-          sampler:
-            filteringMode: Trilinear
-            wrapModeU: Repeat
-            wrapModeV: Repeat
-            wrapModeW: Repeat
-            borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-            mipmaps: false
-          type: Texture2D
-    - Tweak_N167Transform:
-        typeIdx: 7
-        value:
-          0: {x: 1.000000, y: 0.000000, z: 0.000000}
-          1: {x: 0.000000, y: 1.000000, z: 0.000000}
-          2: {x: 0.000000, y: 0.000000, z: 1.000000}
     - Tweak_N168BorderColor:
         typeIdx: 5
         value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
@@ -225,12 +210,9 @@
   FrustumCullPad: 1000000.000000
   InstanceCount: 1
   Defines:
-    []
+    - Tweak_N177
   BlendMode: PremultipliedAlphaAuto
   Properties:
-    Port_Default_N176:
-      typeIdx: 5
-      value: {x: 1.000000, y: 0.999969, z: 0.999985, w: 1.000000}
     Port_Emissive_N174:
       typeIdx: 4
       value: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -315,10 +297,28 @@
     Tweak_N144:
       typeIdx: 1
       value: 0.000000
+    Tweak_N167:
+      typeIdx: 9
+      value:
+        id: fffc409b-1005-4fe2-bd3c-7a3f6a4e03d1
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    Tweak_N167Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
     Tweak_N168:
       typeIdx: 9
       value:
-        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        id: 00000000-0000-0000-0000-000000000000
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -336,7 +336,7 @@
     Tweak_N169:
       typeIdx: 9
       value:
-        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        id: 00000000-0000-0000-0000-000000000000
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -353,10 +353,10 @@
         2: {x: 0.000000, y: 0.000000, z: 1.000000}
     Tweak_N17:
       typeIdx: 1
-      value: 0.750000
+      value: 1.000000
     Tweak_N175:
       typeIdx: 5
-      value: {x: 0.953460, y: 0.501122, z: 0.646418, w: 1.000000}
+      value: {x: 0.041657, y: 0.583841, z: 0.953460, w: 1.000000}
     maxInstanceCount:
       typeIdx: 1
       value: 0.000000
