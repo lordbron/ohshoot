@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/9ab21842-9d70-70e7-d3c1-e501f324eac9>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 71ddc43f-55a0-4254-b9f3-608ba7b2fada
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 71ddc43f-55a0-4254-b9f3-608ba7b2fada
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 705lBJ1mO2BKzUDVJzRNrc
+  AssetDataMap:
+    JavaScriptAsset: !<own> 55e1ddd5-bd64-47dc-aedc-e9a6f9f888ee
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/55e1ddd5-bd64-47dc-aedc-e9a6f9f888ee>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: fe40ebd4-f79b-c7b3-aa03-6ede60c8b1ea
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    spawner: false
+    surfaceDirVariation: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - spawner: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      surfaceDirVariation: 0.400000
+  ScriptTypes:
+    -
+      {}

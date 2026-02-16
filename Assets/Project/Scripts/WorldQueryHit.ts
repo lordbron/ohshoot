@@ -5,6 +5,8 @@ import {
 } from "SpectaclesInteractionKit.lspkg/Core/Interactor/Interactor"
 
 import {SIK} from "SpectaclesInteractionKit.lspkg/SIK"
+import { BaseWeapon } from "./BaseWeapon"
+
 
 const WorldQueryModule = require('LensStudio:WorldQueryModule');
 //const SIK = require('SpectaclesInteractionKit.lspkg/SIK').SIK;
@@ -23,7 +25,10 @@ export class WorldQueryHit extends BaseScriptComponent {
   private transform: Transform;
 
   @input
-  targetObject: SceneObject;
+  targetObject!: SceneObject;
+
+  @input
+  weaponObject!: BaseWeapon
 
   @input
   filterEnabled: boolean;
@@ -80,7 +85,8 @@ export class WorldQueryHit extends BaseScriptComponent {
       ) {
         // Called when a trigger ends
         // Copy the plane/axis object
-        this.sceneObject.copyWholeHierarchy(this.targetObject);
+        const newTarget = this.sceneObject.copyWholeHierarchy(this.targetObject)
+        this.weaponObject.shootArrow()
       }
     }
   }

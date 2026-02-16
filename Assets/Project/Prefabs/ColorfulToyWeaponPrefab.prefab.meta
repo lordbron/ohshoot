@@ -1,0 +1,156 @@
+- !<AssetImportMetadata/00a8cab7-82a8-498d-9569-4f83fde5f20f>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 58b8aecd-1c03-4b6b-bb0f-3cb8e3fbde88
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 58b8aecd-1c03-4b6b-bb0f-3cb8e3fbde88
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> b192ba26-a8a1-4b31-a8af-a0e91f777e4f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/54f0cfc9-ecd9-4411-7fd8-4dce13160626>
+  PrefabRemaps:
+    []
+  Name: ColorToyWeaponPrefab
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> e2d3cd7c-cba1-4cb3-4eb0-ce4dc2b99468
+  Components:
+    - !<own> ae832497-08e4-4e12-724a-291b6d084c11
+- !<RenderMeshVisual/8a1946d7-a6d6-464d-73b1-f264fd3320f4>
+  PrefabRemaps:
+    []
+  Name: model
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0e57d2c9-ed6d-422f-96d4-29c7748b361d
+  Mesh: !<reference> e0c18772-b074-4a6b-b9c8-0c6bc408b463
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/9971a42b-46eb-4e8d-544f-7eba37d40fa2>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9fbd1bae-fa90-47b4-5a6c-e15b26e722cb
+  Components:
+    []
+- !<SceneObject/9fbd1bae-fa90-47b4-5a6c-e15b26e722cb>
+  PrefabRemaps:
+    []
+  Name: model
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.200000, y: 0.080000, z: 0.050000}
+    Rotation: {x: 90.000023, y: -0.000000, z: 20.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> abc19f0e-5743-44f8-8078-ee9dd57e8068
+  Components:
+    - !<own> 8a1946d7-a6d6-464d-73b1-f264fd3320f4
+- !<SceneObject/abc19f0e-5743-44f8-8078-ee9dd57e8068>
+  PrefabRemaps:
+    []
+  Name: Muzzle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.296950, y: 0.025842, z: -0.263772}
+    Rotation: {x: 175.000000, y: -70.000015, z: 180.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<ScriptComponent/ae832497-08e4-4e12-724a-291b6d084c11>
+  PrefabRemaps:
+    []
+  Name: BaseWeapon
+  Enabled: true
+  ScriptAsset: !<reference> ffbe76d4-5fa1-497f-859b-7dba085ded91
+  ScriptInputsDefault:
+    projectile: true
+    muzzle: true
+    scoreText: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      muzzle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scoreText: !<reference.Component> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/b192ba26-a8a1-4b31-a8af-a0e91f777e4f>
+  Prototype: !<ObjectOwner/0b686012-0992-4ffb-9518-d44d26fa5809>
+    PackagePath: ""
+    objects:
+      - !<own> 54f0cfc9-ecd9-4411-7fd8-4dce13160626
+- !<SceneObject/c132f850-ade3-4e05-7d1b-b29851fbc92d>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9971a42b-46eb-4e8d-544f-7eba37d40fa2
+  Components:
+    []
+- !<SceneObject/e2d3cd7c-cba1-4cb3-4eb0-ce4dc2b99468>
+  PrefabRemaps:
+    - 8a1946d7-a6d6-464d-73b1-f264fd3320f4: 7c8a6620-d7d3-4152-6900-8bcbdd75b357
+    - 9971a42b-46eb-4e8d-544f-7eba37d40fa2: ce3d6e24-e5a3-44e0-7ad7-4730bd76e14b
+    - 9fbd1bae-fa90-47b4-5a6c-e15b26e722cb: c0a8230d-d866-4b2e-7984-1b313cce124b
+    - abc19f0e-5743-44f8-8078-ee9dd57e8068: 8b0d41ff-5a03-45ab-bc78-688e44da2d18
+    - c132f850-ade3-4e05-7d1b-b29851fbc92d: 87f0c96e-186d-4ff5-453a-7b4ad98bd019
+    - e2d3cd7c-cba1-4cb3-4eb0-ce4dc2b99468: 84104a94-da9c-4705-539c-ba54cbfb44d6
+  Name: 069700e0-0aa9-7426-8000-f9d2c797aa21-model
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 90.000000, z: -90.000000}
+    Scale: {x: 50.000000, y: 50.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> c132f850-ade3-4e05-7d1b-b29851fbc92d
+  Components:
+    []
