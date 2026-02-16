@@ -1,0 +1,78 @@
+- !<ObjectPrefab/17a9042f-56b2-423f-b1b2-5eef83d630b4>
+  PackagePath: ""
+  objects:
+    - !<own> 9ebd62f2-2dd4-4dc9-8e46-d163224f2a5c
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/9d4a59b0-c67b-432c-b5bb-920911c7550e>
+  PrefabRemaps:
+    []
+  Name: Object 0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 90.000000, z: 0.000000}
+    Scale: {x: 3.500000, y: 3.500000, z: 3.500000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> eb3b1d37-b27c-45a4-bf06-0fbf369b2cc3
+    - !<own> f50b9196-b7ea-4bb6-bfb0-91e97676afae
+- !<SceneObject/9ebd62f2-2dd4-4dc9-8e46-d163224f2a5c>
+  PrefabRemaps:
+    - 9d4a59b0-c67b-432c-b5bb-920911c7550e: 85addf88-f485-4cce-b9da-dbea693282c4
+    - 9ebd62f2-2dd4-4dc9-8e46-d163224f2a5c: 9ebd62f2-2dd4-4dc9-71b9-2e9cddb0d5a3
+    - eb3b1d37-b27c-45a4-bf06-0fbf369b2cc3: 58cf0055-7f9d-4ec0-bd31-03375dedd6ad
+    - f50b9196-b7ea-4bb6-bfb0-91e97676afae: 011d28dc-d836-4465-9d48-e6b5b022febe
+  Name: TriggerDetector
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9d4a59b0-c67b-432c-b5bb-920911c7550e
+  Components:
+    []
+- !<RenderMeshVisual/eb3b1d37-b27c-45a4-bf06-0fbf369b2cc3>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 72f6abf9-e35a-4332-8eb4-e0bb513edda6
+  Mesh: !<reference> f8713816-88ed-44c3-891b-681d9acb6ceb
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ColliderComponent/f50b9196-b7ea-4bb6-bfb0-91e97676afae>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false

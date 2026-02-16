@@ -99,7 +99,7 @@
   PrefabRemaps:
     []
   Name: Purple Sphere
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -280,19 +280,24 @@
     - 6ed1d035-165c-4360-be18-4ba1522fdaf3: 6ed1d035-165c-4360-41e7-b45eadd0250c
     - 70f69ec5-6c5f-4720-a122-dca8babbec6b: 70f69ec5-6c5f-4720-5edd-235745441394
     - 729b8357-07ff-454f-bf1d-0b1c613d638b: 729b8357-07ff-454f-40e2-f4e39ec29c74
+    - 739ddcf3-1be8-45f4-8055-1d6a861dcd21: 5a136e90-4983-4eb2-be6f-d7a29084a3ec
     - 754f3285-5e69-46ff-aebd-577ebdb9e186: 754f3285-5e69-46ff-5142-a88142461e79
     - 77b1647d-8f22-44c7-8f38-973afd702591: 77b1647d-8f22-44c7-70c7-68c5028fda6e
     - 7a0e37dd-a01d-4d30-8d32-c5192c690716: 7a0e37dd-a01d-4d30-72cd-3ae6d396f8e9
     - 83a153ea-705c-4b17-a377-5c18842d81be: 83a153ea-705c-4b17-5c88-a3e77bd27e41
     - 88f2daee-bab2-4937-80aa-a28c0e37d0a2: 88f2daee-bab2-4937-7f55-5d73f1c82f5d
     - 89fb19e0-c284-44d9-b9a7-40a62248106e: 89fb19e0-c284-44d9-4658-bf59ddb7ef91
+    - 9570bb71-85c6-4676-8977-8943025bb5e7: be9a7abf-fb19-42ec-97f2-83d124a9e2ba
     - 95d309d9-43b5-4f48-9a4f-691e34632fb8: 95d309d9-43b5-4f48-65b0-96e1cb9cd047
+    - 9689f838-87de-481b-bbb3-467925bfc130: ad392196-d9a7-4f64-9fff-991e510740a3
     - 97d057a7-99f9-492c-afc5-c6cc29739c41: 97d057a7-99f9-492c-503a-3933d68c63be
     - 9e780c65-e139-41c9-851d-3e3ae3ddb452: 9e780c65-e139-41c9-7ae2-c1c51c224bad
     - a6a2b921-bbe0-4682-b18c-804d73e4064c: a6a2b921-bbe0-4682-4e73-7fb28c1bf9b3
+    - ae22ac8c-b9ea-42db-8dd5-cb545a57db90: f9509e4c-b7ba-43b2-9318-c18d252a4917
     - af404902-4c07-4439-91ef-386785e5d978: af404902-4c07-4439-6e10-c7987a1a2687
     - b14f8918-88c1-4338-bdbb-04b576dfaabd: b14f8918-88c1-4338-4244-fb4a89205542
     - b55d2590-9496-44a8-9164-b2a1d903a8d3: b55d2590-9496-44a8-6e9b-4d5e26fc572c
+    - b5ccf47d-df7d-468a-a95e-4dbc70af08bb: 74f8aba3-586a-4729-8bf5-b88cea844829
     - b8827ef7-d9aa-467f-9bca-89c97a77f048: b8827ef7-d9aa-467f-6435-763685880fb7
     - bae72567-aaf1-43ef-916f-7e99f25fb237: bae72567-aaf1-43ef-6e90-81660da04dc8
     - c03dc202-73a0-435d-ac65-18bc32c81e24: c03dc202-73a0-435d-539a-e743cd37e1db
@@ -342,7 +347,7 @@
   PrefabRemaps:
     []
   Name: "Objects Presets [EDIT_CHILDREN]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -360,7 +365,7 @@
   PrefabRemaps:
     []
   Name: 3. Objects Controller
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -448,7 +453,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On Floor [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -482,7 +487,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On Ceiling [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: -5.000000, z: 0.000000}
@@ -541,6 +546,7 @@
     - !<own> 5d914419-f366-41c1-9d2c-adc841b7ea33
     - !<own> 70f69ec5-6c5f-4720-a122-dca8babbec6b
     - !<own> 97d057a7-99f9-492c-afc5-c6cc29739c41
+    - !<own> 739ddcf3-1be8-45f4-8055-1d6a861dcd21
     - !<own> 16eb5d45-cd18-4cc2-b99c-a25062afe557
   Components:
     []
@@ -548,7 +554,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On All Vertical Surfaces [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -563,7 +569,7 @@
   PrefabRemaps:
     []
   Name: Pink Box
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -599,7 +605,7 @@
   PrefabRemaps:
     []
   Name: Brown Sphere
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -625,7 +631,7 @@
   ScriptInputs:
     "":
       object: !<reference.SceneObject[]>
-        - !<reference> 16eb5d45-cd18-4cc2-b99c-a25062afe557
+        - !<reference> 739ddcf3-1be8-45f4-8055-1d6a861dcd21
       groupObjects: false
       type: All
       directionType: up
@@ -642,11 +648,29 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/739ddcf3-1be8-45f4-8055-1d6a861dcd21>
+  PrefabRemaps:
+    []
+  Name: RubberDuckyTarget
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 3.000000, z: 0.000000}
+    Rotation: {x: 180.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 20.000000, y: 19.999998, z: 19.999998}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ae22ac8c-b9ea-42db-8dd5-cb545a57db90
+    - !<own> b5ccf47d-df7d-468a-a95e-4dbc70af08bb
+    - !<own> 9570bb71-85c6-4676-8977-8943025bb5e7
+    - !<own> 9689f838-87de-481b-bbb3-467925bfc130
 - !<SceneObject/754f3285-5e69-46ff-aebd-577ebdb9e186>
   PrefabRemaps:
     []
   Name: Orange Box
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -662,7 +686,7 @@
   PrefabRemaps:
     []
   Name: Blue Sphere
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -678,7 +702,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On Seat [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -727,7 +751,7 @@
   PrefabRemaps:
     []
   Name: Red Plane
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 5.000000, z: 0.000000}
@@ -739,6 +763,29 @@
   Components:
     - !<own> 374e1ced-1a5b-4d74-a2aa-b7b595228da3
     - !<own> f69a5e91-b1f4-4fbe-9b7e-1f1fea3755e1
+- !<BodyComponent/9570bb71-85c6-4676-8977-8943025bb5e7>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<RenderMeshVisual/95d309d9-43b5-4f48-9a4f-691e34632fb8>
   PrefabRemaps:
     []
@@ -759,11 +806,27 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/9689f838-87de-481b-bbb3-467925bfc130>
+  PrefabRemaps:
+    []
+  Name: BaseTarget
+  Enabled: true
+  ScriptAsset: !<reference> 098c3370-ece3-42d1-b56d-389b3ac8ba7c
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/97d057a7-99f9-492c-afc5-c6cc29739c41>
   PrefabRemaps:
     []
   Name: Green Box
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: -5.000000, z: 0.000000}
@@ -809,6 +872,26 @@
   ScriptTypes:
     "":
       {}
+- !<RenderMeshVisual/ae22ac8c-b9ea-42db-8dd5-cb545a57db90>
+  PrefabRemaps:
+    []
+  Name: model
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b12bf6b3-3ad7-4b16-9521-6ee013243976
+  Mesh: !<reference> cc58275f-0d40-473c-859c-432ca8ce120a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ScriptComponent/af404902-4c07-4439-91ef-386785e5d978>
   PrefabRemaps:
     []
@@ -896,6 +979,24 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/b5ccf47d-df7d-468a-a95e-4dbc70af08bb>
+  PrefabRemaps:
+    []
+  Name: CloneMaterialToObjects
+  Enabled: true
+  ScriptAsset: !<reference> fe5f46da-1861-47a5-90fe-fa511bee0096
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      materialToCopy: !<reference.Material> b12bf6b3-3ad7-4b16-9521-6ee013243976
+      objectsRequiringMaterial: !<reference.SceneObject[]>
+        - !<reference> 739ddcf3-1be8-45f4-8055-1d6a861dcd21
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/b8827ef7-d9aa-467f-9bca-89c97a77f048>
   PrefabRemaps:
     []
@@ -920,7 +1021,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On Unknown Surface Types [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1002,7 +1103,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On All Down Facing Surfaces [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1017,7 +1118,7 @@
   PrefabRemaps:
     []
   Name: Yellow Plane
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: -5.000000, z: 0.000000}
@@ -1053,7 +1154,7 @@
   PrefabRemaps:
     []
   Name: Spawn Based on Surface Orientation
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1089,7 +1190,7 @@
   PrefabRemaps:
     []
   Name: "Spawn On Table [EDIT_ME]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}

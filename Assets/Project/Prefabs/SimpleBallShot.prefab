@@ -64,6 +64,22 @@
   BodySettingValue: 1.000000
   Damping: 0.000000
   AngularDamping: 0.000000
+- !<ScriptComponent/7ad91b39-6f7a-45cd-8203-b23bb039ceb8>
+  PrefabRemaps:
+    []
+  Name: BaseProjectile
+  Enabled: true
+  ScriptAsset: !<reference> f9388b73-63e1-4a13-9333-334f6637a8de
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/87600dd3-cc61-47e2-8ee0-c70119985587>
   PrefabRemaps:
     []
@@ -84,29 +100,13 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ScriptComponent/9e8ce46c-7895-45ec-9526-b9547c1b0c82>
-  PrefabRemaps:
-    []
-  Name: BaseProjectile
-  Enabled: true
-  ScriptAsset: !<reference> f9388b73-63e1-4a13-9333-334f6637a8de
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      {}
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/ee471891-aa6d-40c2-ab21-1a82cff8b321>
   PrefabRemaps:
     - 60055aac-8a44-40e0-a0bd-7c04ba5a0c29: 60055aac-8a44-40e0-5f42-83fb45a5f3d6
     - 695ea539-22aa-448a-ba35-9ebbdbeec6ec: 83911077-83bb-4b27-84ba-fa2a2fb77182
     - 75464da7-fc64-4dbe-bc8c-4e81ce1d7d81: 14cff028-27de-496a-835e-02ba3f567c4a
+    - 7ad91b39-6f7a-45cd-8203-b23bb039ceb8: 9364f1d5-7d98-438e-9f4f-98fdef68a7f7
     - 87600dd3-cc61-47e2-8ee0-c70119985587: 87600dd3-cc61-47e2-711f-38fee667aa78
-    - 9e8ce46c-7895-45ec-9526-b9547c1b0c82: d435887d-d073-404f-89b9-3c3dba9b782f
     - ee471891-aa6d-40c2-ab21-1a82cff8b321: ee471891-aa6d-40c2-54de-e57d30074cde
   Name: Sphere
   Enabled: true
@@ -123,4 +123,4 @@
     - !<own> 60055aac-8a44-40e0-a0bd-7c04ba5a0c29
     - !<own> 695ea539-22aa-448a-ba35-9ebbdbeec6ec
     - !<own> 75464da7-fc64-4dbe-bc8c-4e81ce1d7d81
-    - !<own> 9e8ce46c-7895-45ec-9526-b9547c1b0c82
+    - !<own> 7ad91b39-6f7a-45cd-8203-b23bb039ceb8

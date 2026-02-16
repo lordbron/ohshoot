@@ -12,6 +12,7 @@
     - !<own> c6ed5f31-f774-4df2-b703-653a5a5a187f
     - !<own> a0732ca3-1bd4-4d5e-b506-91206710c302
     - !<own> ea869774-3307-4bb0-89a1-ad1d9c6e51e3
+    - !<own> 4301a73c-5001-4a82-a3ca-97324439f841
     - !<own> ce044c8b-00d4-4775-8804-69f02d41355f
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
@@ -618,6 +619,23 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/1a8c0f8d-d83c-457c-915f-059bd83a8766>
+  PrefabRemaps:
+    []
+  Name: TriggerShootTracking
+  Enabled: true
+  ScriptAsset: !<reference> 7bb7abd5-af06-4007-a3bd-c33d7b2dab2e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      keypointPrefab: !<reference.ObjectPrefab> 17a9042f-56b2-423f-b1b2-5eef83d630b4
+      weaponObject: !<MappingBased.AssignableType> 50adab7c-8d59-4c9c-8516-acf744f4a951
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/1a90888e-d4d2-4c81-b8cb-9e2370b94e8a>
   PrefabRemaps:
     []
@@ -1668,6 +1686,21 @@
   Components:
     - !<own> 130ee5db-2ef8-48d8-9230-174ad8bba614
     - !<own> 95c00f90-07d8-46dc-8b4c-147fb10daac3
+- !<SceneObject/4301a73c-5001-4a82-a3ca-97324439f841>
+  PrefabRemaps:
+    []
+  Name: TriggerShootTracking
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1a8c0f8d-d83c-457c-915f-059bd83a8766
 - !<SceneObject/440d9903-0516-47eb-a79f-3764e57df5b3>
   PrefabRemaps:
     []
@@ -2978,7 +3011,7 @@
   PrefabRemaps:
     []
   Name: RightHandMeshFull
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5196,6 +5229,7 @@
     - 0cb237b4-343e-47d1-982e-b0008e49ddc9: c03dc202-73a0-435d-539a-e743cd37e1db
     - 11d71a25-1a79-41dd-9c36-650ff18c010e: 31a86e8f-b181-4f20-66ab-1b0a63abc5c3
     - 1394c4c5-f76f-44a8-b930-201123a1a096: b8827ef7-d9aa-467f-6435-763685880fb7
+    - 1801431a-3f1e-4ba2-b4bc-92a646718540: 5a136e90-4983-4eb2-be6f-d7a29084a3ec
     - 1991dcab-b031-48fd-aa78-9d0c62ded6d4: af404902-4c07-4439-6e10-c7987a1a2687
     - 1a761e32-ca86-4188-94df-c46e25dbfe7a: d38e3f5e-edfc-45aa-6ef8-9eea7d948d11
     - 1e17fccd-b7f7-43f7-afd0-928beec63678: 89fb19e0-c284-44d9-4658-bf59ddb7ef91
@@ -5211,6 +5245,7 @@
     - 50b01945-c590-463e-9a8c-f5d06ac4badd: 5bffaae5-0bf6-4672-683e-9bcaa2e40242
     - 57efd693-e17e-413b-9163-11234f417037: 7a0e37dd-a01d-4d30-72cd-3ae6d396f8e9
     - 617b4967-8c6f-4e7f-bdd9-cfe26c077c3b: 1fd0e926-af5c-44aa-4a98-6281926cc5fa
+    - 6454389e-959a-451d-a2ec-4895a1236ee6: ad392196-d9a7-4f64-9fff-991e510740a3
     - 65c1f22a-bb89-4705-a1c3-e11096605e96: b55d2590-9496-44a8-6e9b-4d5e26fc572c
     - 666cca73-e44d-4e6a-ac2e-6284a18758df: c7a94e23-6267-4965-6434-169ad1649101
     - 66b2788f-7f40-4aa6-8dfe-52a1e91537c1: 1da26a4d-4efc-4cb4-47fd-08ba2d86b57b
@@ -5224,8 +5259,10 @@
     - 8b972be9-3126-48ca-8585-7f366e940631: 21156d9d-806c-48b7-4087-d55515d73b7c
     - 9053659a-9eb5-4858-a193-0b87f74a4dc6: bae72567-aaf1-43ef-6e90-81660da04dc8
     - 919d1555-72e7-449a-bf14-c75d6f921316: cd13fc9b-ea0b-4b21-66f2-a576c8dea677
+    - 93d1913f-6f18-47a6-85b7-371029d9da64: be9a7abf-fb19-42ec-97f2-83d124a9e2ba
     - 9801101b-8211-4232-92ac-353acef178ef: 0f4586fb-3cca-462b-5384-5d701b6a027a
     - a5261b90-faa2-44d7-b5a3-bb29f616bf1e: eccafe34-f376-4357-511c-45f0919d263a
+    - ac7789aa-83a7-45bb-a634-2717603a147a: f9509e4c-b7ba-43b2-9318-c18d252a4917
     - ae72180a-fc7e-4493-9afd-1ff620ddb4a4: 097c8f72-0c97-4034-4012-8ee2652da0dc
     - b3573e4f-1917-4365-8c58-bc7013dbeb83: 729b8357-07ff-454f-40e2-f4e39ec29c74
     - b51968e9-8a42-40a5-95d9-0777e82463b2: 43dfb835-fd97-4a11-5ad2-1f95a905d02a
@@ -5233,6 +5270,7 @@
     - b6edf5bf-f7bb-4b63-bf2d-fa490cf9ed4a: 9e780c65-e139-41c9-7ae2-c1c51c224bad
     - b8f3c9cc-cc97-4c3e-bef0-0eff01de2f93: 170489fe-cc40-40c9-51ac-569dea234be8
     - ba3328f8-946f-4e9a-a013-d3afa192a918: 83a153ea-705c-4b17-5c88-a3e77bd27e41
+    - ba6ce250-8ac1-4457-8e36-40bdb16436f0: 74f8aba3-586a-4729-8bf5-b88cea844829
     - bf8c2e86-aa03-4b71-9807-10f32941d3aa: 385b2faa-daf2-4509-4424-371dde812b58
     - c663f5ae-3db2-47aa-8ab3-2fe891c56770: 379153f7-0267-4978-6db8-4bf29b6a7d73
     - ce044c8b-00d4-4775-8804-69f02d41355f: 3101a86b-1ee2-4468-7c14-21cb432ab2d0
@@ -6110,7 +6148,7 @@
   PrefabRemaps:
     []
   Name: RightHandPinMesh
-  Enabled: false
+  Enabled: true
   Layers: 2
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
