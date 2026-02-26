@@ -1,6 +1,7 @@
 // import required modules
-import { BaseWeapon } from "./BaseWeapon"
-const EPSILON = 0.01;
+import { Scoreboard } from "./Scoreboard"
+import { BaseTarget } from "./BaseTarget"
+const EPSILON = 0.01
 
 // based on code in the "World Mesh - Spawn on Surface" Asset in Lens Studio Asset Library 
 // For Asset Library info: https://developers.snap.com/lens-studio/assets-pipeline/asset-library/asset-library-overview
@@ -8,7 +9,7 @@ const EPSILON = 0.01;
 export class TargetDisplay extends BaseScriptComponent {
   // this is the target you want this display to instatiate during layout
   @input
-  targetPrefab!: ObjectPrefab;
+  targetPrefab!: ObjectPrefab
 
   // the world mesh so we can spawn enemies "on the real world"
   @input
@@ -17,6 +18,9 @@ export class TargetDisplay extends BaseScriptComponent {
   // For spectacles, this is the camera object 
   @input
   tracker!: DeviceTracking
+
+  @input
+  scoreboard!: Scoreboard
 
   // the folowing properties are to control how frequently you want enemies to appear
   // while the defaul is slow, I plan on speeding it up to make the game harder as you play
@@ -43,8 +47,11 @@ export class TargetDisplay extends BaseScriptComponent {
       const targetObject = this.targetPrefab.instantiate(this.sceneObject);
 
       // get hit information
-      const hitPosition = results.position;
-      const hitNormal = results.normal;
+      const hitPosition = results.position
+      const hitNormal = results.normal
+      const baseTarget = targetObject.getComponent(BaseTarget.getTypeName())
+      baseTarget.scoreboard = this.scoreboard
+      baseTarget.pointValue = 1
 
       // leaving this in to add scary rotate towards player effect
       var lookDirection;

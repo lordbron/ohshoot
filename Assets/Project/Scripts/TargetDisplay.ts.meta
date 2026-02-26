@@ -26,6 +26,7 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    scoreboard: false
     targetPrefab: false
     tracker: false
     worldMesh: false
@@ -41,6 +42,7 @@
     - targetPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       worldMesh: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
       tracker: !<reference.DeviceTracking> 00000000-0000-0000-0000-000000000000
+      scoreboard: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -48,3 +50,4 @@
     - // @input Asset.ObjectPrefab targetPrefab
     - // @input Component.RenderMeshVisual worldMesh
     - // @input Component.DeviceTracking tracker
+    - // @input AssignableType scoreboard
