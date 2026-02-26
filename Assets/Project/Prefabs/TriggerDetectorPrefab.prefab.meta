@@ -1,0 +1,90 @@
+- !<AssetImportMetadata/db0f1022-01b9-498b-9f13-d803b2dd0d2d>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 17a9042f-56b2-423f-b1b2-5eef83d630b4
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 17a9042f-56b2-423f-b1b2-5eef83d630b4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 9df4936e-8693-4745-8e5d-1b5c7c2a05ce
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ColliderComponent/011d28dc-d836-4465-9d48-e6b5b022febe>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<RenderMeshVisual/58cf0055-7f9d-4ec0-bd31-03375dedd6ad>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: false
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 72f6abf9-e35a-4332-8eb4-e0bb513edda6
+  Mesh: !<reference> f8713816-88ed-44c3-891b-681d9acb6ceb
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/85addf88-f485-4cce-b9da-dbea693282c4>
+  PrefabRemaps:
+    []
+  Name: Object 0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 90.000000, z: 0.000000}
+    Scale: {x: 3.500000, y: 3.500000, z: 3.500000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 58cf0055-7f9d-4ec0-bd31-03375dedd6ad
+    - !<own> 011d28dc-d836-4465-9d48-e6b5b022febe
+- !<ObjectPrefabAssetData/9df4936e-8693-4745-8e5d-1b5c7c2a05ce>
+  Prototype: !<ObjectOwner/50681b1c-4ecd-4ab1-b353-d34e72a80e06>
+    PackagePath: ""
+    objects:
+      - !<own> 9ebd62f2-2dd4-4dc9-71b9-2e9cddb0d5a3
+- !<SceneObject/9ebd62f2-2dd4-4dc9-71b9-2e9cddb0d5a3>
+  PrefabRemaps:
+    []
+  Name: TriggerDetector
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 85addf88-f485-4cce-b9da-dbea693282c4
+  Components:
+    []

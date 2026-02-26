@@ -14,29 +14,6 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<BodyComponent/14cff028-27de-496a-835e-02ba3f567c4a>
-  PrefabRemaps:
-    []
-  Name: Physics Body
-  Enabled: true
-  Shape: !<Box>
-    FitVisual: true
-    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
-  Matter: !<reference> 00000000-0000-0000-0000-000000000000
-  Filter: !<reference> 00000000-0000-0000-0000-000000000000
-  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  EnableSmoothing: false
-  PositionTension: 30.000000
-  RotationTension: 30.000000
-  ForceCompound: false
-  Intangible: false
-  ShowCollider: false
-  Dynamic: false
-  BodySetting: Density
-  BodySettingValue: 1.000000
-  Damping: 0.000000
-  AngularDamping: 0.000000
 - !<ColliderComponent/60055aac-8a44-40e0-5f42-83fb45a5f3d6>
   PrefabRemaps:
     []
@@ -99,7 +76,7 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ScriptComponent/d435887d-d073-404f-89b9-3c3dba9b782f>
+- !<ScriptComponent/9364f1d5-7d98-438e-9f4f-98fdef68a7f7>
   PrefabRemaps:
     []
   Name: BaseProjectile
@@ -132,5 +109,4 @@
     - !<own> 87600dd3-cc61-47e2-711f-38fee667aa78
     - !<own> 60055aac-8a44-40e0-5f42-83fb45a5f3d6
     - !<own> 83911077-83bb-4b27-84ba-fa2a2fb77182
-    - !<own> 14cff028-27de-496a-835e-02ba3f567c4a
-    - !<own> d435887d-d073-404f-89b9-3c3dba9b782f
+    - !<own> 9364f1d5-7d98-438e-9f4f-98fdef68a7f7

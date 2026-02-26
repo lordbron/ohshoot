@@ -1,6 +1,8 @@
 @component
 export class BaseTarget extends BaseScriptComponent {
-    onAwake() {
 
+
+    onAwake() {
+        print("basetarget woke up")
     }
 }

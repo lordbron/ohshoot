@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/018d76c0-0570-40d6-a9a8-9963b9a01244>
+- !<AssetImportMetadata/afe6d342-a13b-4aa3-b6a2-0fdfbd708520>
   ImportedAssetIds:
-    TypeScriptAsset: !<reference> 6d0b93a3-3801-4bc5-ac27-d38cbdf7826b
+    TypeScriptAsset: !<reference> 7bb7abd5-af06-4007-a3bd-c33d7b2dab2e
   ImporterName: TypeScriptAssetImporter
-  PrimaryAsset: !<reference> 6d0b93a3-3801-4bc5-ac27-d38cbdf7826b
+  PrimaryAsset: !<reference> 7bb7abd5-af06-4007-a3bd-c33d7b2dab2e
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    TypeScriptAsset: !<own> 656464cf-857d-49b0-80d9-7075ddacff17
+    TypeScriptAsset: !<own> d1fee60d-7050-4b5e-b0ad-ab0f383b60e1
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<TypeScriptAssetData/656464cf-857d-49b0-80d9-7075ddacff17>
+- !<TypeScriptAssetData/d1fee60d-7050-4b5e-b0ad-ab0f383b60e1>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -22,12 +22,11 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 851d2de1-edf3-40f5-b2cc-3e894f9b4842
+  ComponentUid: 200f4d9d-d9e5-4629-a810-fe4789d63325
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    filterEnabled: false
-    targetObject: false
+    keypointPrefab: false
     weaponObject: false
   ScriptTypesHidden:
     {}
@@ -38,13 +37,11 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+    - keypointPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       weaponObject: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
-      filterEnabled: false
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input SceneObject targetObject
+    - // @input Asset.ObjectPrefab keypointPrefab
     - // @input AssignableType weaponObject
-    - // @input bool filterEnabled
