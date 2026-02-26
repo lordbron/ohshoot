@@ -10,11 +10,11 @@ export class BaseWeapon extends BaseScriptComponent {
 
     @input
     muzzle!:SceneObject
-
+/*
     @input
     @hint("Text component to display score")
     scoreText!: Component
-
+*/
     private shootCount: number = 0
     private score: number = 0
     private rotatingTarget: SceneObject
@@ -28,8 +28,8 @@ export class BaseWeapon extends BaseScriptComponent {
     // Fire the arrow projectile
   shootArrow(): void {
     this.shootCount++
-    print("🏹 SHOOT ARROW CALLED! Shot #" + this.shootCount + " 🏹")
-    print("SHOOTING ARROW - Shot #" + this.shootCount)
+    // print("🏹 SHOOT ARROW CALLED! Shot #" + this.shootCount + " 🏹")
+    // print("SHOOTING ARROW - Shot #" + this.shootCount)
 
     // Calculate the direction from start to end
     const startPos = this.muzzle.getTransform().getWorldPosition()
@@ -38,8 +38,8 @@ export class BaseWeapon extends BaseScriptComponent {
     const shootDir = this.muzzle.getTransform().forward
 
     // Log shooting parameters for debugging
-    print("🎯 Shooting from: " + startPos.toString())
-    print("🎯 Direction vector: " + shootDir.toString())
+    // print("🎯 Shooting from: " + startPos.toString())
+    // print("🎯 Direction vector: " + shootDir.toString())
 
     // Create the projectile
     if (this.projectile) {
@@ -53,7 +53,6 @@ export class BaseWeapon extends BaseScriptComponent {
         // Enable the instance and position it exactly at the start point
         instance.enabled = true
         instance.getTransform().setWorldPosition(startPos)
-        instance.removeParent()
 
         // Create a rotation that directly aligns the projectile with the shooting direction
         // The Z-axis of the object should point toward the shooting direction
@@ -66,11 +65,11 @@ export class BaseWeapon extends BaseScriptComponent {
         // Double-check projectile orientation before applying force
         const objectMatrix = instance.getTransform().getWorldTransform()
         const worldForward = objectMatrix.multiplyDirection(new vec3(0, 0, 1))
-        print("🔄 Projectile Z-axis (world space): " + worldForward.normalize().toString())
+        // print("🔄 Projectile Z-axis (world space): " + worldForward.normalize().toString())
 
         // Log projectile setup
-        print("🔴 Projectile instantiated at: " + startPos.toString())
-        print("🔴 Projectile direction set to: " + shootDir.toString())
+        // print("🔴 Projectile instantiated at: " + startPos.toString())
+        // print("🔴 Projectile direction set to: " + shootDir.toString())
 
         // Get physics body component
         const physicsBody = instance.getComponent("Physics.BodyComponent") as any
@@ -122,10 +121,11 @@ export class BaseWeapon extends BaseScriptComponent {
           print("Rotating target hit! Score: " + this.score)
 
           // Update score text
+          /*
           if (this.scoreText) {
             ;(this.scoreText as any).text = "Score: " + this.score
           }
-
+          */
           // Destroy projectile
           projectile.destroy()
         }

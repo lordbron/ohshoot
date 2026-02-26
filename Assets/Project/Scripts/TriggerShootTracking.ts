@@ -31,7 +31,7 @@ export class TriggerShootTracking extends BaseScriptComponent {
         const self = this
         collider.onOverlapEnter.add((e) => {
             const hitObject = e.overlap.collider.getSceneObject()
-            print("Overlapping " + hitObject.name)
+            print("Overlapping finger " + hitObject.name)
 
             // Check if it hit the rotating target or any other target
             if (hitObject.name.includes("Trigger")) {
@@ -39,7 +39,7 @@ export class TriggerShootTracking extends BaseScriptComponent {
                 print("Shoot the weapon!")
             } else {
             // self.sceneObject.destroy()
-                print("Not a target!")
+                print("Not a trigger!")
             }
         })
         } else {

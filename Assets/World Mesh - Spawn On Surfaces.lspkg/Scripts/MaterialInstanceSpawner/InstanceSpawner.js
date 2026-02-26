@@ -115,7 +115,7 @@ global.Spawner = function(instancedObjectControllers, studioScales, spacingGroup
         if (global.InstancedObject) {
             
             var instance = new global.InstancedObject(instanceId, this.instancedObjectControllers, pos, rot, this.studioScales, initialScale, finalScale);
-            
+            print("instance name: " + instance.name)
             instancesStorage[this.spacingGroup].push(instance);
             return instance;
         }

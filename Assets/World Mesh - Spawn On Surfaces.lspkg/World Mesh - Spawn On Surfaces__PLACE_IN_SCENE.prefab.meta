@@ -498,8 +498,6 @@
   Components:
     - !<own> f9509e4c-b7ba-43b2-9318-c18d252a4917
     - !<own> 74f8aba3-586a-4729-8bf5-b88cea844829
-    - !<own> be9a7abf-fb19-42ec-97f2-83d124a9e2ba
-    - !<own> ad392196-d9a7-4f64-9fff-991e510740a3
 - !<SceneObject/5bffaae5-0bf6-4672-683e-9bcaa2e40242>
   PrefabRemaps:
     []
@@ -783,22 +781,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/ad392196-d9a7-4f64-9fff-991e510740a3>
-  PrefabRemaps:
-    []
-  Name: BaseTarget
-  Enabled: true
-  ScriptAsset: !<reference> 098c3370-ece3-42d1-b56d-389b3ac8ba7c
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      {}
-  ScriptTypes:
-    "":
-      {}
 - !<ScriptComponent/af404902-4c07-4439-6e10-c7987a1a2687>
   PrefabRemaps:
     []
@@ -940,29 +922,6 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
-- !<BodyComponent/be9a7abf-fb19-42ec-97f2-83d124a9e2ba>
-  PrefabRemaps:
-    []
-  Name: Physics Body
-  Enabled: true
-  Shape: !<Box>
-    FitVisual: true
-    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
-  Matter: !<reference> 00000000-0000-0000-0000-000000000000
-  Filter: !<reference> 00000000-0000-0000-0000-000000000000
-  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  EnableSmoothing: false
-  PositionTension: 30.000000
-  RotationTension: 30.000000
-  ForceCompound: false
-  Intangible: false
-  ShowCollider: false
-  Dynamic: false
-  BodySetting: Density
-  BodySettingValue: 1.000000
-  Damping: 0.000000
-  AngularDamping: 0.000000
 - !<ScriptComponent/c03dc202-73a0-435d-539a-e743cd37e1db>
   PrefabRemaps:
     []

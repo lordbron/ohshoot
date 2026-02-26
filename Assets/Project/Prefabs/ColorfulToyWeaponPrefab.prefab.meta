@@ -103,14 +103,12 @@
   ScriptInputsDefault:
     projectile: true
     muzzle: true
-    scoreText: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       muzzle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      scoreText: !<reference.Component> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
