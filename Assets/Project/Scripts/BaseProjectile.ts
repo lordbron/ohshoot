@@ -14,7 +14,7 @@ export class BaseProjectile extends BaseScriptComponent {
 
     onAwake() {
         this.setupCollisionDetection()
-        this.createEvent('UpdateEvent').bind(this.onUpdate.bind(this));
+        this.createEvent('UpdateEvent').bind(this.onUpdate.bind(this))
     }
     
     onUpdate() {
@@ -162,7 +162,7 @@ export class BaseProjectile extends BaseScriptComponent {
 
             // Destroy the projectile and target after hitting
           self.spent = true
-            hitObject.destroy()
+            baseTarget.killOff()
             self.sceneObject.destroy()
           print("Destroy both")
 
