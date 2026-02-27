@@ -14,6 +14,7 @@
     - !<own> ea869774-3307-4bb0-89a1-ad1d9c6e51e3
     - !<own> 4301a73c-5001-4a82-a3ca-97324439f841
     - !<own> 45a4ebc5-6a42-4198-8b70-243a866b2d29
+    - !<own> d02762eb-c612-4697-82d5-73935ba2754a
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -1797,6 +1798,7 @@
     "":
       projectile: !<reference.ObjectPrefab> 7755a93b-232e-4762-b995-4737ca785952
       muzzle: !<reference.SceneObject> 4d9aecbf-d181-4651-a755-76d793595308
+      shotSound: !<reference.AudioComponent> 5386a582-9604-42ca-9cd4-caa752e87f0b
   ScriptTypes:
     "":
       {}
@@ -1846,6 +1848,23 @@
     - !<own> 999e9598-e7e9-43f2-a3fb-757b68b37e4c
   Components:
     - !<own> 6ee5906a-c3c1-431b-aff5-03d881491f47
+- !<AudioComponent/5386a582-9604-42ca-9cd4-caa752e87f0b>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 0d017b17-8ce7-49ed-a43f-ed6c28a18749
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: true
+  EnableDistanceEffect: true
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: true
+  EnablePositionEffect: true
 - !<SceneObject/541a1667-fb17-43bf-bd3b-7b713063d3f7>
   PrefabRemaps:
     []
@@ -3147,7 +3166,9 @@
     - 4c43328f-39f2-497f-83e1-191bdbdacc37: 9fbd1bae-fa90-47b4-5a6c-e15b26e722cb
     - 4d9aecbf-d181-4651-a755-76d793595308: abc19f0e-5743-44f8-8078-ee9dd57e8068
     - 50adab7c-8d59-4c9c-8516-acf744f4a951: ae832497-08e4-4e12-724a-291b6d084c11
+    - 5386a582-9604-42ca-9cd4-caa752e87f0b: 4ae7c69c-b9bc-43ba-9d69-bf4df781ed0f
     - 8da1efe3-9803-452d-a2da-84bbde0cfa40: 54f0cfc9-ecd9-4411-7fd8-4dce13160626
+    - c711a666-def9-40ea-af12-ed9f65a92abf: ca34532e-0197-408a-865c-c6993dbf5371
     - cf8d6d06-75ab-4f6e-a52d-e69f3ca5d71d: 9971a42b-46eb-4e8d-544f-7eba37d40fa2
     - fc1462c7-6983-454f-8663-e12e5d20ef5b: c132f850-ade3-4e05-7d1b-b29851fbc92d
   Name: ColorfulToyWeaponPrefab
@@ -3160,6 +3181,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 38d42809-5d30-4140-bbd1-e9e47540a8a8
+    - !<own> c711a666-def9-40ea-af12-ed9f65a92abf
   Components:
     - !<own> 50adab7c-8d59-4c9c-8516-acf744f4a951
 - !<SceneObject/908a63d7-e105-42b0-a057-a96ea62d3506>
@@ -4335,6 +4357,21 @@
     []
   Components:
     - !<own> 9e2de5d1-c210-4ef5-9dd8-0931d1012189
+- !<SceneObject/c711a666-def9-40ea-af12-ed9f65a92abf>
+  PrefabRemaps:
+    []
+  Name: PopSound
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5386a582-9604-42ca-9cd4-caa752e87f0b
 - !<RenderMeshVisual/c7b98ccf-629e-4278-be3c-e8861b8b8706>
   PrefabRemaps:
     []
@@ -4468,6 +4505,21 @@
     - !<own> 4c43328f-39f2-497f-83e1-191bdbdacc37
   Components:
     []
+- !<SceneObject/d02762eb-c612-4697-82d5-73935ba2754a>
+  PrefabRemaps:
+    []
+  Name: ShotSound
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d763cccb-fd36-42b1-a87b-6aab28f9d6a9
 - !<SceneObject/d068eba3-1e0b-4b40-aa4c-7096a22b2748>
   PrefabRemaps:
     []
@@ -4640,6 +4692,23 @@
     - !<own> 6bf04e34-6299-4f27-8f48-259345a32666
   Components:
     []
+- !<AudioComponent/d763cccb-fd36-42b1-a87b-6aab28f9d6a9>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> f1356e14-3a67-4363-b653-a8d641fdeb1d
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: true
+  EnableDistanceEffect: true
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: true
+  EnablePositionEffect: true
 - !<SceneObject/d8ce2d41-6bdf-4d37-beb2-a693b7e1d24c>
   PrefabRemaps:
     []

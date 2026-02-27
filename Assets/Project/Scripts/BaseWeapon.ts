@@ -10,6 +10,9 @@ export class BaseWeapon extends BaseScriptComponent {
 
     @input
     muzzle!:SceneObject
+
+    @input
+    shotSound!:AudioComponent
 /*
     @input
     @hint("Text component to display score")
@@ -92,12 +95,14 @@ export class BaseWeapon extends BaseScriptComponent {
         const initialVelocity = shootDir.uniformScale(this.initialSpeed)
         physicsBody.enabled = false
         baseProjectile.setupManualMotion(shootDir)
+        this.shotSound.play(1)
 
         } else {
         print("No physics body found on projectile - using manual motion")
 
         // Use manual motion for non-physics objects
         baseProjectile.setupManualMotion(shootDir)
+        this.shotSound.play(1)
         }
     } else {
         print("ERROR: Projectile prefab not assigned!")

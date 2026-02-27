@@ -77,6 +77,38 @@
   BodySettingValue: 1.000000
   Damping: 0.000000
   AngularDamping: 0.000000
+- !<SceneObject/4e19affb-147b-4c51-a57f-3454f778c90e>
+  PrefabRemaps:
+    []
+  Name: SpawnSound
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a9f34412-69e5-41b8-9d03-780c606e3856
+- !<AudioComponent/a9f34412-69e5-41b8-9d03-780c606e3856>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 9306ae65-56d6-415f-aa56-c5090e3f685f
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: true
+  EnableDistanceEffect: true
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: true
+  EnablePositionEffect: true
 - !<ScriptComponent/aafb26f9-f17c-4d92-8014-b32baaec56f1>
   PrefabRemaps:
     []
@@ -89,7 +121,8 @@
     {}
   ScriptInputs:
     "":
-      {}
+      spawnSound: !<reference.AudioComponent> a9f34412-69e5-41b8-9d03-780c606e3856
+      shotSound: !<reference.AudioComponent> d763cccb-fd36-42b1-a87b-6aab28f9d6a9
   ScriptTypes:
     "":
       {}
@@ -99,6 +132,8 @@
     - 07733121-2336-4033-8c52-0e945f406136: 07733121-2336-4033-73ad-f16ba0bf9ec9
     - 0bd6b962-acfe-407a-ac83-653f9729c725: 0bd6b962-acfe-407a-537c-9ac068d638da
     - 0dc2d879-b7e3-4699-bfa9-e24f6cb40bce: 25e6e8f9-4c0b-447d-a24a-3f2a516eda0a
+    - 4e19affb-147b-4c51-a57f-3454f778c90e: f1b9c4da-9ae4-4d19-8e38-4fc54e9c62c7
+    - a9f34412-69e5-41b8-9d03-780c606e3856: e6cc8882-3b25-4a65-b911-4560da2911b2
     - aafb26f9-f17c-4d92-8014-b32baaec56f1: aafb26f9-f17c-4d92-7feb-4cd45513a90e
     - bb168ac7-be86-4be9-aaf9-81023a7719ca: bb168ac7-be86-4be9-5506-7efdc588e635
     - e5308435-92ee-4984-993f-d6030896fa6d: e5308435-92ee-4984-66c0-29fcf7690592
@@ -113,6 +148,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> e5308435-92ee-4984-993f-d6030896fa6d
+    - !<own> 4e19affb-147b-4c51-a57f-3454f778c90e
   Components:
     - !<own> aafb26f9-f17c-4d92-8014-b32baaec56f1
     - !<own> 0dc2d879-b7e3-4699-bfa9-e24f6cb40bce

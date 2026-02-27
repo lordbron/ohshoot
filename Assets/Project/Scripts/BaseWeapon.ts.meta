@@ -28,6 +28,7 @@
   ScriptInputsHidden:
     muzzle: false
     projectile: false
+    shotSound: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -39,9 +40,11 @@
   DefaultScriptInputs:
     - projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       muzzle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      shotSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input Asset.ObjectPrefab projectile
     - // @input SceneObject muzzle
+    - // @input Component.AudioComponent shotSound

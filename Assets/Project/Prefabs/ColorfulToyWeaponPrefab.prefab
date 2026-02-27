@@ -7,7 +7,9 @@
 - !<SceneObject/54f0cfc9-ecd9-4411-8027-b231ece9f9d9>
   PrefabRemaps:
     - 54f0cfc9-ecd9-4411-8027-b231ece9f9d9: 54f0cfc9-ecd9-4411-7fd8-4dce13160626
+    - 647df97e-ecdd-45af-9d5d-70829fe19c37: ca34532e-0197-408a-865c-c6993dbf5371
     - 8a1946d7-a6d6-464d-8c4e-0d9b02ccdf0b: 8a1946d7-a6d6-464d-73b1-f264fd3320f4
+    - 8f94fc78-7bb1-4f27-9c6a-93ddfe0d33a1: 4ae7c69c-b9bc-43ba-9d69-bf4df781ed0f
     - 9971a42b-46eb-4e8d-abb0-8145c82bf05d: 9971a42b-46eb-4e8d-544f-7eba37d40fa2
     - 9fbd1bae-fa90-47b4-a593-1ea4d918dd34: 9fbd1bae-fa90-47b4-5a6c-e15b26e722cb
     - ae832497-08e4-4e12-8db5-d6e492f7b3ee: ae832497-08e4-4e12-724a-291b6d084c11
@@ -24,8 +26,24 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> e2d3cd7c-cba1-4cb3-b14f-31b23d466b97
+    - !<own> 647df97e-ecdd-45af-9d5d-70829fe19c37
   Components:
     - !<own> ae832497-08e4-4e12-8db5-d6e492f7b3ee
+- !<SceneObject/647df97e-ecdd-45af-9d5d-70829fe19c37>
+  PrefabRemaps:
+    []
+  Name: PopSound
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8f94fc78-7bb1-4f27-9c6a-93ddfe0d33a1
 - !<RenderMeshVisual/8a1946d7-a6d6-464d-8c4e-0d9b02ccdf0b>
   PrefabRemaps:
     []
@@ -46,6 +64,23 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<AudioComponent/8f94fc78-7bb1-4f27-9c6a-93ddfe0d33a1>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 0d017b17-8ce7-49ed-a43f-ed6c28a18749
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: true
+  EnableDistanceEffect: true
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: true
+  EnablePositionEffect: true
 - !<SceneObject/9971a42b-46eb-4e8d-abb0-8145c82bf05d>
   PrefabRemaps:
     []
@@ -91,6 +126,7 @@
     "":
       projectile: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       muzzle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      shotSound: !<reference.AudioComponent> 8f94fc78-7bb1-4f27-9c6a-93ddfe0d33a1
   ScriptTypes:
     "":
       {}
