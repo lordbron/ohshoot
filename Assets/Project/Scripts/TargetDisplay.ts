@@ -53,19 +53,7 @@ export class TargetDisplay extends BaseScriptComponent {
       baseTarget.scoreboard = this.scoreboard
       baseTarget.pointValue = 1
 
-      // leaving this in to add scary rotate towards player effect
-      var lookDirection;
-      if (1 - Math.abs(hitNormal.normalize().dot(vec3.up())) < EPSILON) {
-        lookDirection = vec3.forward();
-      } else {
-        lookDirection = hitNormal.cross(vec3.up());
-      }
-
-      const toRotation = quat.lookAt(lookDirection, hitNormal);
-
-      //identifying the direction the object should look at based on the normal of the hit location.
-      // //set position and rotation
-      targetObject.getTransform().setWorldRotation(toRotation);
+      //set position
       targetObject.getTransform().setWorldPosition(hitPosition);
   }
 

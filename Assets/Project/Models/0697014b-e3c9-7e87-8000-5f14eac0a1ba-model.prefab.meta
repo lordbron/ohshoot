@@ -54,6 +54,16 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<LookAtComponent/77020bdf-831c-4ac3-861e-7d97557f4f16>
+  PrefabRemaps:
+    []
+  Name: Look At
+  Enabled: true
+  LookAtMode: LookAtPoint
+  AimVectors: XAimNegativeZUp
+  WorldUpVector: SceneY
+  Target: !<reference> 00000000-0000-0065-0000-000000000064
+  OffsetRotation: {x: 0.000000, y: 0.000000, z: -90.000000}
 - !<SceneObject/7e17ff85-633b-4ad3-7f95-d1ed5dae24e8>
   PrefabRemaps:
     []
@@ -62,13 +72,14 @@
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 90.000023, y: -0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 742d370f-7570-4fb6-6830-71177adf4d3d
+    - !<own> 77020bdf-831c-4ac3-861e-7d97557f4f16
 - !<SceneObject/8b286b85-44a4-4974-584a-54c2102a88e0>
   PrefabRemaps:
     []

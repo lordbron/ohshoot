@@ -92,6 +92,16 @@
     []
   Components:
     - !<own> a9f34412-69e5-41b8-9d03-780c606e3856
+- !<LookAtComponent/6ef715e9-581d-4322-a778-3c3bb30d4d38>
+  PrefabRemaps:
+    []
+  Name: Look At
+  Enabled: true
+  LookAtMode: LookAtPoint
+  AimVectors: XAimNegativeZUp
+  WorldUpVector: SceneY
+  Target: !<reference> 00000000-0000-0065-0000-000000000064
+  OffsetRotation: {x: 0.000000, y: 0.000000, z: -90.000000}
 - !<AudioComponent/a9f34412-69e5-41b8-9d03-780c606e3856>
   PrefabRemaps:
     []
@@ -133,6 +143,7 @@
     - 0bd6b962-acfe-407a-ac83-653f9729c725: 0bd6b962-acfe-407a-537c-9ac068d638da
     - 0dc2d879-b7e3-4699-bfa9-e24f6cb40bce: 25e6e8f9-4c0b-447d-a24a-3f2a516eda0a
     - 4e19affb-147b-4c51-a57f-3454f778c90e: f1b9c4da-9ae4-4d19-8e38-4fc54e9c62c7
+    - 6ef715e9-581d-4322-a778-3c3bb30d4d38: 674838fc-64ab-4b56-bfbb-10b2dae9d198
     - a9f34412-69e5-41b8-9d03-780c606e3856: e6cc8882-3b25-4a65-b911-4560da2911b2
     - aafb26f9-f17c-4d92-8014-b32baaec56f1: aafb26f9-f17c-4d92-7feb-4cd45513a90e
     - bb168ac7-be86-4be9-aaf9-81023a7719ca: bb168ac7-be86-4be9-5506-7efdc588e635
@@ -157,6 +168,7 @@
     - 00ee6d73-cc38-47f8-883c-b175bf480092: 742d370f-7570-4fb6-6830-71177adf4d3d
     - 07733121-2336-4033-8c52-0e945f406136: 8b286b85-44a4-4974-584a-54c2102a88e0
     - 0bd6b962-acfe-407a-ac83-653f9729c725: 430b8263-d434-48d9-4ba4-c054abddf5af
+    - 6ef715e9-581d-4322-a778-3c3bb30d4d38: 77020bdf-831c-4ac3-861e-7d97557f4f16
     - e5308435-92ee-4984-993f-d6030896fa6d: bb6beee8-cf9f-4797-5a19-6cfe974d85e3
     - fbede149-7264-450c-8c64-3280ddb4f70f: 7e17ff85-633b-4ad3-7f95-d1ed5dae24e8
   Name: 0697014b-e3c9-7e87-8000-5f14eac0a1ba-model
@@ -179,10 +191,11 @@
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 90.000023, y: -0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 00ee6d73-cc38-47f8-883c-b175bf480092
+    - !<own> 6ef715e9-581d-4322-a778-3c3bb30d4d38
