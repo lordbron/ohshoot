@@ -14,6 +14,151 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/00ad9162-eb1e-49c9-8106-b4fdf60ccb79>
+  PrefabRemaps:
+    []
+  Name: Score Label
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b20cefb1-35c1-4d32-8d00-5c50aec8c4b8
+- !<SceneObject/123850ff-c391-4994-a4fd-90410c273f71>
+  PrefabRemaps:
+    - 00ad9162-eb1e-49c9-8106-b4fdf60ccb79: fa664808-9e36-4d01-7fdf-1e17c16a2e09
+    - 123850ff-c391-4994-a4fd-90410c273f71: 69de6ee9-cbc0-448c-786b-40f0ea4b672a
+    - 28fcdd93-e540-4724-8758-b659b18cf48a: 73af8c45-eb7d-488d-5794-ee9d8f2824d4
+    - 32ad3cf0-5bd6-456f-a4e5-c75e1c3ec3bb: 9abba066-014e-4755-4e5d-6f860d923eb3
+    - 475b92ef-2258-41b5-9121-30172ba8df41: dabecbc4-5657-4f17-5870-6cf7ad0d6029
+    - 868afba9-f45b-47cc-8e79-bf20822353db: 1279668c-ed52-400d-6d35-c1206b6e719e
+    - b20cefb1-35c1-4d32-8d00-5c50aec8c4b8: ed81ea97-56a9-4b6f-5912-bb1a3e0dce00
+    - fbe28661-4811-49eb-823f-7841d3ce9194: e3eae485-ddb3-453b-623d-30e6aa4bb647
+  Name: ScoreboardPrefab
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 868afba9-f45b-47cc-8e79-bf20822353db
+  Components:
+    []
+- !<SceneObject/28fcdd93-e540-4724-8758-b659b18cf48a>
+  PrefabRemaps:
+    []
+  Name: Score Text
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -2.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 32ad3cf0-5bd6-456f-a4e5-c75e1c3ec3bb
+- !<Text/32ad3cf0-5bd6-456f-a4e5-c75e1c3ec3bb>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: 0
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 72
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  BlendMode: PremultipliedAlpha
+  Outline: !<OutlineSettings>
+    Enabled: true
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.300000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
+- !<Canvas/475b92ef-2258-41b5-9121-30172ba8df41>
+  PrefabRemaps:
+    []
+  Name: Canvas
+  Enabled: true
+  UnitType: World
+  SortingType: Hierarchy
+  WorldSpaceRect:
+    left: -15.000000
+    bottom: -20.000000
+    right: 15.000000
+    top: 20.000000
 - !<AudioComponent/4ae7c69c-b9bc-43ba-9d69-bf4df781ed0f>
   PrefabRemaps:
     []
@@ -43,10 +188,28 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> 123850ff-c391-4994-a4fd-90410c273f71
     - !<own> e2d3cd7c-cba1-4cb3-4eb0-ce4dc2b99468
     - !<own> ca34532e-0197-408a-865c-c6993dbf5371
   Components:
     - !<own> ae832497-08e4-4e12-724a-291b6d084c11
+- !<SceneObject/868afba9-f45b-47cc-8e79-bf20822353db>
+  PrefabRemaps:
+    []
+  Name: Scoreboard
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 18.200001, y: -3.000000, z: 30.080000}
+    Rotation: {x: 180.000000, y: 0.000000, z: 90.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 00ad9162-eb1e-49c9-8106-b4fdf60ccb79
+    - !<own> 28fcdd93-e540-4724-8758-b659b18cf48a
+  Components:
+    - !<own> 475b92ef-2258-41b5-9121-30172ba8df41
+    - !<own> fbe28661-4811-49eb-823f-7841d3ce9194
 - !<RenderMeshVisual/8a1946d7-a6d6-464d-73b1-f264fd3320f4>
   PrefabRemaps:
     []
@@ -136,6 +299,87 @@
     PackagePath: ""
     objects:
       - !<own> 54f0cfc9-ecd9-4411-7fd8-4dce13160626
+- !<Text/b20cefb1-35c1-4d32-8d00-5c50aec8c4b8>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: "Score:"
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 72
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  BlendMode: PremultipliedAlpha
+  Outline: !<OutlineSettings>
+    Enabled: true
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.300000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<SceneObject/c132f850-ade3-4e05-7d1b-b29851fbc92d>
   PrefabRemaps:
     []
@@ -186,3 +430,19 @@
     - !<own> c132f850-ade3-4e05-7d1b-b29851fbc92d
   Components:
     []
+- !<ScriptComponent/fbe28661-4811-49eb-823f-7841d3ce9194>
+  PrefabRemaps:
+    []
+  Name: Scoreboard
+  Enabled: true
+  ScriptAsset: !<reference> bbb7733c-30fe-4560-a0de-45713245021d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      scoreText: !<reference.Text> 32ad3cf0-5bd6-456f-a4e5-c75e1c3ec3bb
+  ScriptTypes:
+    "":
+      {}
