@@ -3,7 +3,12 @@ export class Scoreboard extends BaseScriptComponent {
     @input
     scoreText: Text
 
-    private scoreValue = 0
+    public scoreValue = 0
+
+    public resetScore() {
+        this.scoreValue = 0
+        this.updateScoreText()
+    }
 
     onAwake() {
         this.updateScoreText()

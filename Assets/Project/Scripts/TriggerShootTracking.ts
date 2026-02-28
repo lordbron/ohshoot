@@ -26,20 +26,20 @@ export class TriggerShootTracking extends BaseScriptComponent {
         // Get the collider component on the projectile
         const collider = this.middleUpperKeypointSceneObject.getChild(0).getComponent("Physics.ColliderComponent") as any
         if (collider) {
-        print("next finger Collider found.")
+        // print("next finger Collider found.")
         // Setup overlap events
         const self = this
         collider.onOverlapEnter.add((e) => {
             const hitObject = e.overlap.collider.getSceneObject()
-            print("Overlapping finger " + hitObject.name)
+            // print("Overlapping finger " + hitObject.name)
 
             // Check if it hit the rotating target or any other target
             if (hitObject.name.includes("Trigger")) {
                 this.weaponObject.shootArrow()
-                print("Shoot the weapon!")
+                // print("Shoot the weapon!")
             } else {
             // self.sceneObject.destroy()
-                print("Not a trigger!")
+                // print("Not a trigger!")
             }
         })
         } else {
@@ -56,7 +56,7 @@ export class TriggerShootTracking extends BaseScriptComponent {
                     this.getSceneObject()
                 )
                 this.indexTipKeypointSceneObject.getChild(0).name = "TriggerFinger"
-                print('Right hand tracked - instantiated index tip keypoint prefab');
+                // print('Right hand tracked - instantiated index tip keypoint prefab');
             }
 
             // if (!this.middleTipKeypointSceneObject) {
@@ -72,7 +72,7 @@ export class TriggerShootTracking extends BaseScriptComponent {
                 );
                 this.middleUpperKeypointSceneObject.getChild(0).name = "NextFinger"
                 this.setupCollisionDetection()
-                print('Right hand tracked - instantiated middle upper keypoint prefab');
+                // print('Right hand tracked - instantiated middle upper keypoint prefab');
             }
 
             // Update position and rotation
@@ -106,7 +106,7 @@ export class TriggerShootTracking extends BaseScriptComponent {
             if (this.indexTipKeypointSceneObject) {
             this.indexTipKeypointSceneObject.destroy();
             this.indexTipKeypointSceneObject = null;
-            print('Right hand lost - destroyed index tip keypoint prefab');
+            // print('Right hand lost - destroyed index tip keypoint prefab');
             }
             // if (this.middleTipKeypointSceneObject) {
             // this.middleTipKeypointSceneObject.destroy();
@@ -116,7 +116,7 @@ export class TriggerShootTracking extends BaseScriptComponent {
             if (this.middleUpperKeypointSceneObject) {
             this.middleUpperKeypointSceneObject.destroy();
             this.middleUpperKeypointSceneObject = null;
-            print('Right hand lost - destroyed middle upper joing keypoint prefab');
+            // print('Right hand lost - destroyed middle upper joing keypoint prefab');
             }
         }
         });

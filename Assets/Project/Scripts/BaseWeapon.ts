@@ -63,7 +63,7 @@ export class BaseWeapon extends BaseScriptComponent {
         ///instance.getTransform().setWorldRotation(lookRotation)
 
         // Log rotation info for debugging
-        print("🔄 Rotation set to align projectile with direction: " + shootDir.toString())
+        // print("🔄 Rotation set to align projectile with direction: " + shootDir.toString())
 
         // Double-check projectile orientation before applying force
         const objectMatrix = instance.getTransform().getWorldTransform()
@@ -98,7 +98,7 @@ export class BaseWeapon extends BaseScriptComponent {
         this.shotSound.play(1)
 
         } else {
-        print("No physics body found on projectile - using manual motion")
+        // print("No physics body found on projectile - using manual motion")
 
         // Use manual motion for non-physics objects
         baseProjectile.setupManualMotion(shootDir)
@@ -123,7 +123,7 @@ export class BaseWeapon extends BaseScriptComponent {
         if (distance < 5.0) {
           // Collision threshold
           this.score += 10 // Increase score
-          print("Rotating target hit! Score: " + this.score)
+          // print("Rotating target hit! Score: " + this.score)
 
           // Update score text
           /*

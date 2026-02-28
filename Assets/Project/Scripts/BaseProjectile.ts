@@ -149,9 +149,9 @@ export class BaseProjectile extends BaseScriptComponent {
 
         // Check if it hit the rotating target or any other target
         if (baseTarget) {
-          print("Projectile Overlapping " + hitObject.name)
-          print("Project Overlapping basetarget" + baseTarget)
-          print("Projectile Overlapping baseTarget? " + ((baseTarget != null)?"y":"n"))
+          // print("Projectile Overlapping " + hitObject.name)
+          // print("Project Overlapping basetarget" + baseTarget)
+          // print("Projectile Overlapping baseTarget? " + ((baseTarget != null)?"y":"n"))
           //   this.score += 10 // Increase score
           //   print("Target hit! Score: " + this.score)
 
@@ -171,7 +171,7 @@ export class BaseProjectile extends BaseScriptComponent {
         //   self.shouldMove = false
         } else {
           // self.sceneObject.destroy()
-          print("Not a target!")
+          // print("Not a target!")
         }
       })
     } else {
