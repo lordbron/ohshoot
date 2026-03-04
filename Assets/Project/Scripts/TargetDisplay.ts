@@ -25,20 +25,20 @@ export class TargetDisplay extends BaseScriptComponent {
   @input
   worldMesh!: RenderMeshVisual
 
-  // For spectacles, this is the camera object 
+  // For spectacles, this is on the camera object 
   @input
   tracker!: DeviceTracking
 
+  // the scoreboard that let's the user know their current score
   @input
   scoreboard!: Scoreboard
 
+  // the sign that tells them what level they're on/starting
   @input
   levelSign!: LevelSign
 
-  // the folowing properties are to control how frequently you want enemies to appear
-  // while the defaul is slow, I plan on speeding it up to make the game harder as you play
   
-  // the smaller number here, the faster they spawn
+  // the smaller number here, the faster enemies spawn
   private frequencyInSeconds = 3
 
   // when did we last spawn a ducky
@@ -47,33 +47,50 @@ export class TargetDisplay extends BaseScriptComponent {
   // the data associated with the current level
   private currentLevel = new GameLevel()
 
-  // whether or not we should spawnEnemies
-  private spawnEnemies = true
+  // whether or not we should spawn enemies
+  private spawnEnemies = false
 
   
   onAwake() {
     // standard update event setup
     this.createEvent('UpdateEvent').bind(this.onUpdate.bind(this));
-    // let the level know when it started
+  }
+
+  public startGame() {
+    // let the level know that it has started
     this.currentLevel.levelStartTime = getTime()
+    // start spawning enemies
+    this.spawnEnemies = true
+  }
+
+  // hide the level sign
+  public hideLevelSign() {
+    // we currently use enabled to hide
+    this.levelSign.enabled = false
+  }
+
+  // show the level sign
+  public showLevelSign() {
+    // we currently use enabled to show
+    this.levelSign.enabled = true
   }
 
   // once we have a hit, let's handle it
   onHitTestResult(results) {
 
-      // let's instantiate a new object
-      const targetObject = this.targetPrefab.instantiate(this.sceneObject);
+    // let's instantiate a new object
+    const targetObject = this.targetPrefab.instantiate(this.sceneObject);
 
-      // get hit information
-      const hitPosition = results.position
+    // get hit information
+    const hitPosition = results.position
 
-      // set up items needed for scoring points
-      const baseTarget = targetObject.getComponent(BaseTarget.getTypeName())
-      baseTarget.scoreboard = this.scoreboard
-      baseTarget.pointValue = 1
+    // set up items needed for scoring points
+    const baseTarget = targetObject.getComponent(BaseTarget.getTypeName())
+    baseTarget.scoreboard = this.scoreboard
+    baseTarget.pointValue = 1
 
-      //set position
-      targetObject.getTransform().setWorldPosition(hitPosition);
+    //set position
+    targetObject.getTransform().setWorldPosition(hitPosition);
   }
 
   onUpdate() {
